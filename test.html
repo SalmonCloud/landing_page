@@ -252,6 +252,8 @@
         {
             position: relative;
             left: 0;
+            width: 100%;
+            height: 80%;
             padding: 20px 40px;
             background: rgba(255, 255, 255, 0.01);
             backdrop-filter: blur(10px);
@@ -266,6 +268,7 @@
         {
             left: -25px;
             padding: 60px 40px;
+            height: 90%;
         }
 
         .cus-container .box .content h2
@@ -282,7 +285,7 @@
             line-height: 1.4em;
         }
 
-        .location-link,
+        .cus-button,
         .cus-container .box .content a
         {
             display: inline-block;
@@ -296,13 +299,18 @@
             margin-top: 5px;
         }
 
-        .location-link:hover,
+        .cus-button:hover,
         .cus-container .box .content a:hover
         {
             background: #ffcf4d;
             border: 1px solid rgba(255, 0, 88, 0.4);
             box-shadow: 0 1px 15px rgba(1, 1, 1, 0.2);
             color: black;
+        }
+
+        #client-area {
+            padding: 10px;
+            background: #f59033;
         }
 
         #OS-libraries img{
@@ -312,198 +320,220 @@
     </style>  
 </head>
 <body>
-    <div id="app">
+    <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="./Logos/SalmonCloud.png" style="width: 70px; height: auto;" alt="Salmon Cloud Logo"></a>
+            <div class="collapse navbar-collapse">
+                <div class="navbar-nav">
+                    <a class="nav-link main-text" href="https://billing.salmoncloud.co.uk/">Client Area</a>
+                </div>
+              </div>
+        </div>
+      </nav>
+    <br>
+    <!--
+    <div class="container">
+        <div class="row">
+            <div class="row align-self-end">
+                <h6>
+                    <a href="https://billing.salmoncloud.co.uk/" class="cus-button main-text" id="client-area">Client Area</a>
+                </h6>
+            </div>
+        </div>
+    </div>-->
+    <br>
+    <br>
+    <div class="container text-center">
+        <div class="title">
+            <h1 class="display-3">Empower Your Digital Journey With</h1>
+            <h1 class="display-1">
+                <img src="./Logos/SalmonCloud.png" style="width: 120px; height: auto;" alt="Salmon Cloud Logo">
+                <span class="salmon-color">Salmon</span>
+                <span class="cloud-color">Cloud</span>
+            </h1>
+            <h5 class="display-6">Affordable VPS backed by Enterprise Hardware and customizable options.</h5>
+        </div>
+        <!--
+        <h6>
+            <a href="https://billing.salmoncloud.co.uk/" class="cus-button main-text" id="client-area">Client Area</a>
+        </h6>-->
         <br>
         <br>
-        <br>
-        <div class="container text-center">
-            <div class="title">
-                <h1 class="display-3">Empower Your Digital Journey With</h1>
-                <h1 class="display-1">
-                    <img src="./Logos/SalmonCloud.png" style="width: 120px; height: auto;" alt="Salmon Cloud Logo">
-                    <span class="salmon-color">Salmon</span>
-                    <span class="cloud-color">Cloud</span>
-                </h1>
-                <h5 class="display-6">Affordable VPS backed by Enterprise Hardware and a variety of choices.</h5>
-            </div>
-            <br>
-            <br>
-            <div class="cus-container main-text">
-                <div class="box">
-                  <span></span>
-                  <div class="content">
-                    <h2>Cloud Computing</h2>
-                    <p>Out latest processors can gaurantee fast performance</p>
-                  </div>
-                </div>
-                <div class="box">
-                  <span></span>
-                  <div class="content">
-                    <h2>Dedicated Server</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                  </div>
-                </div>
-                <div class="box">
-                  <span></span>
-                  <div class="content">
-                    <h2>Colocation</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                  </div>
+        <div class="cus-container main-text">
+            <div class="box">
+                <span></span>
+                <div class="content">
+                <h2>Cloud Computing</h2>
+                <p>Our servers are built on advanced hardware infrastructure to ensure stability and reliability. Our VPS solutions offer flexible resource allocation and scalable computing power. Whether you need more CPU, memory, or storage space, we can meet your requirements.</p>
                 </div>
             </div>
-            <div class="title">
-                <h1 class="display-2 salmon-color" style="margin-top: 140px;">Locations</h1>
-            </div>
-            <div class="row" style="margin: 40px;">
-                <div class="card col">
-                    <div class="title">
-                        <h1 class="display-5">San Jose [US]</h1>
-                    </div>
-                    <div class="text-start main-text">
-                        <ul>
-                            <li>3rd Gen Epyc Milan Core</li>
-                            <li>3200MHz DDR4 ECC Memory</li>
-                            <li>Intel P5510 Gen 4 Datacenter NVMe RAID-10</li>
-                            <li>Dedicated IPv4 Address</li>
-                            <li>Dedicated IPv6 Block</li>
-                            <li>Modern UI, rDNS support, one-click installation of latest OS images</li>
-                        </ul>
-                        <div style="display: flex; justify-content: center; align-items: center;">
-                            <a href="https://salmoncloud.co.uk/store/san-jose-vps-metered" class="location-link" style="text-align: center;">Explore Plans</a>
-                        </div>
-                    </div>
+            <div class="box">
+                <span></span>
+                <div class="content">
+                <h2>Dedicated Server</h2>
+                <p>Empower your operations with our high-performance, single-tenant dedicated servers, fueled by high-performance CPUs. Maintain complete control over your environment while enjoying unparalleled performance and reliability."</p>
                 </div>
-                <div class="card col">
-                    <div class="title">
-                        <h1 class="display-5">Hong Kong [CH]</h1>
-                    </div>
-                    <div class="text-start main-text">
-                        <ul>
-                            <li>3rd Gen Epyc Milan Core</li>
-                            <li>3200MHz DDR4 ECC Memory</li>
-                            <li>Intel P5510 Gen 4 Datacenter NVMe RAID-10</li>
-                            <li>Dedicated IPv4 Address</li>
-                            <li>Dedicated IPv6 Block</li>
-                            <li>Modern UI, rDNS support, one-click installation of latest OS images</li>
-                        </ul>
-                        <div style="display: flex; justify-content: center; align-items: center;">
-                            <a href="#" class="location-link" style="text-align: center;">Explore Plans</a>
-                        </div>
+            </div>
+            <div class="box">
+                <span></span>
+                <div class="content">
+                <h2>Colocation</h2>
+                <p>If you already own your private server, you can choose to host it in our data center. Our facilities are equipped with advanced security measures and reliable network connections to ensure that your servers operate in a secure and stable environment.</p>
+                </div>
+            </div>
+        </div>
+        <div class="title">
+            <h1 class="display-2 salmon-color" style="margin-top: 140px;">Locations</h1>
+        </div>
+        <div class="row" style="margin: 40px;">
+            <div class="card col">
+                <div class="title">
+                    <h1 class="display-5">San Jose [US]</h1>
+                </div>
+                <div class="text-start main-text">
+                    <ul>
+                        <li>3rd Gen Epyc Milan Core</li>
+                        <li>3200MHz DDR4 ECC Memory</li>
+                        <li>Intel P5510 Gen 4 Datacenter NVMe RAID-10</li>
+                        <li>Dedicated IPv4 Address</li>
+                        <li>Dedicated IPv6 Block</li>
+                        <li>Modern UI, rDNS support, one-click installation of latest OS images</li>
+                    </ul>
+                    <div style="display: flex; justify-content: center; align-items: center;">
+                        <a href="https://salmoncloud.co.uk/store/san-jose-vps-metered" class="cus-button" style="text-align: center;">Explore Plans</a>
                     </div>
                 </div>
             </div>
+            <div class="card col">
+                <div class="title">
+                    <h1 class="display-5">Hong Kong [CH]</h1>
+                </div>
+                <div class="text-start main-text">
+                    <ul>
+                        <li>3rd Gen Epyc Milan Core</li>
+                        <li>3200MHz DDR4 ECC Memory</li>
+                        <li>Intel P5510 Gen 4 Datacenter NVMe RAID-10</li>
+                        <li>Dedicated IPv4 Address</li>
+                        <li>Dedicated IPv6 Block</li>
+                        <li>Modern UI, rDNS support, one-click installation of latest OS images</li>
+                    </ul>
+                    <div style="display: flex; justify-content: center; align-items: center;">
+                        <a href="#" class="cus-button" style="text-align: center;">Explore Plans</a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-            <div class="title">
-                <h1 class="display-2 salmon-color" style="margin-top: 140px;">Deploy Any OS in Seconds</h1>
-            </div>
-            <div class="main-text">
-                *note: Windows template is only available for some plans
-            </div>
-            <div class="cus-container main-text">
-                <div class="box" id="os-library" style="width: 1000px; height: 800px;">
-                  <span></span>
-                  <div class="content" style="width: 100%;">
-                    <h2 class="title" style="margin-bottom: 40px;">OS Library</h2>
-                    <div class="container" id="OS-libraries">
-                        <div class="row" style="margin-bottom: 20px;">
-                            <div class="col">
-                                <img src="./Logos/FreeBSD.webp">
-                            </div>
-                            <div class="col">
-                                <img src="./Logos/ArchLinux.png">
-                            </div>
-                            <div class="col">
-                                <img src="./Logos/OracleLinux.svg.png" style="width: 108px; margin-top: 15px;">
-                            </div>
-                            <div class="col">
-                                <img src="./Logos/Debian.png" style="width: 108px;">
-                            </div>
+        <div class="title">
+            <h1 class="display-2 salmon-color" style="margin-top: 140px;">Deploy Any OS in Seconds</h1>
+        </div>
+        <div class="main-text">
+            *note: Windows template is only available for some plans
+        </div>
+        <div class="cus-container main-text">
+            <div class="box" id="os-library" style="width: 1000px; height: 800px;">
+                <span></span>
+                <div class="content" style="width: 100%;">
+                <h2 class="title" style="margin-bottom: 40px;">OS Library</h2>
+                <div class="container" id="OS-libraries">
+                    <div class="row" style="margin-bottom: 20px;">
+                        <div class="col">
+                            <img src="./Logos/FreeBSD.webp">
                         </div>
-                        <div class="row" style="margin-bottom: 40px;">
-                            <div class="col">
-                                <p>FreeBSD</p>
-                            </div>
-                            <div class="col">
-                                <p>Arch Linux</p>
-                            </div>
-                            <div class="col">
-                                <p>Oracle Linux</p>
-                            </div>
-                            <div class="col">
-                                <p>Debian</p>
-                            </div>
+                        <div class="col">
+                            <img src="./Logos/ArchLinux.png">
                         </div>
-
-                        <div class="row" style="margin-bottom: 20px;">
-                            <div class="col">
-                                <img src="./Logos/RockyLinux.svg.png">
-                            </div>
-                            <div class="col">
-                                <img src="./Logos/AlmaLinux.png">
-                            </div>
-                            <div class="col">
-                                <img src="./Logos/Ubuntu.svg.png">
-                            </div>
-                            <div class="col">
-                                <img src="./Logos/Fedora.svg.png">
-                            </div>
+                        <div class="col">
+                            <img src="./Logos/OracleLinux.svg.png" style="width: 108px; margin-top: 15px;">
                         </div>
-                        <div class="row" style="margin-bottom: 40px;">
-                            <div class="col">
-                                <p>Rocky Linux</p>
-                            </div>
-                            <div class="col">
-                                <p>Alma Linux</p>
-                            </div>
-                            <div class="col">
-                                <p>Ubuntu</p>
-                            </div>
-                            <div class="col">
-                                <p>Fedora</p>
-                            </div>
-                        </div>
-
-                        <div class="row" style="margin-bottom: 20px;">
-                            <div class="col-3">
-                                <img src="./Logos/OpenSUSE.png">
-                            </div>
-                            <div class="col-3">
-                                <img src="./Logos/CentOS.svg.png">
-                            </div>
-                            <div class="col-3">
-                                <img src="./Logos/Windows.webp">
-                            </div>
-                        </div>
-                        <div class="row" style="margin-bottom: 40px;">
-                            <div class="col-3">
-                                <p>open SUSE</p>
-                            </div>
-                            <div class="col-3">
-                                <p>CentOS</p>
-                            </div>
-                            <div class="col-3">
-                                <p>Windows</p>
-                            </div>
+                        <div class="col">
+                            <img src="./Logos/Debian.png" style="width: 108px;">
                         </div>
                     </div>
-                    
-                  </div>
-                </div>
-            </div>
+                    <div class="row" style="margin-bottom: 40px;">
+                        <div class="col">
+                            <p>FreeBSD</p>
+                        </div>
+                        <div class="col">
+                            <p>Arch Linux</p>
+                        </div>
+                        <div class="col">
+                            <p>Oracle Linux</p>
+                        </div>
+                        <div class="col">
+                            <p>Debian</p>
+                        </div>
+                    </div>
 
-            <div class="title" style="font-size: 1.4rem; text-align: center; margin: 20px;">
-                <div style="font-size: 1.8rem;"><img src="./Logos/SalmonCloud.png" style="width: 50px; height: auto;" alt="Salmon Cloud Logo">salmoncloud.co.uk</div>
-                <div style="margin: 10px;">Address: 128 City Road, London, United Kingdom, EC1V 2NX</div>
-                <!--<a href="https://discord.gg/X4Yxc8eaBw" style="color: #5b209a;"><i class="fa-brands fa-discord" style="font-size: 2rem;"></i></a>-->
-                <a style="margin: 10px;" href="https://discord.gg/X4Yxc8eaBw"><img src="/Logos/Discord.png" style="width: 40px; height: auto;"></a>
-                <div class="container" style="margin: 10px;">
-                    <div class="row justify-content-center">
-                        <div class="col-2">Privacy Policy</div>
-                        <div class="col-2">Terms of Service</div>
+                    <div class="row" style="margin-bottom: 20px;">
+                        <div class="col">
+                            <img src="./Logos/RockyLinux.svg.png">
+                        </div>
+                        <div class="col">
+                            <img src="./Logos/AlmaLinux.png">
+                        </div>
+                        <div class="col">
+                            <img src="./Logos/Ubuntu.svg.png">
+                        </div>
+                        <div class="col">
+                            <img src="./Logos/Fedora.svg.png">
+                        </div>
+                    </div>
+                    <div class="row" style="margin-bottom: 40px;">
+                        <div class="col">
+                            <p>Rocky Linux</p>
+                        </div>
+                        <div class="col">
+                            <p>Alma Linux</p>
+                        </div>
+                        <div class="col">
+                            <p>Ubuntu</p>
+                        </div>
+                        <div class="col">
+                            <p>Fedora</p>
+                        </div>
+                    </div>
+
+                    <div class="row" style="margin-bottom: 20px;">
+                        <div class="col-3">
+                            <img src="./Logos/OpenSUSE.png">
+                        </div>
+                        <div class="col-3">
+                            <img src="./Logos/CentOS.svg.png">
+                        </div>
+                        <div class="col-3">
+                            <img src="./Logos/Windows.webp">
+                        </div>
+                    </div>
+                    <div class="row" style="margin-bottom: 40px;">
+                        <div class="col-3">
+                            <p>open SUSE</p>
+                        </div>
+                        <div class="col-3">
+                            <p>CentOS</p>
+                        </div>
+                        <div class="col-3">
+                            <p>Windows</p>
+                        </div>
                     </div>
                 </div>
-                <div style="margin: 10px;">© Copyright 2023-2024 SalmonCloud Ltd.. All Rights Reserved.</div>
+                
+                </div>
             </div>
+        </div>
+
+        <div class="title" style="font-size: 1.4rem; text-align: center; margin: 20px;">
+            <div style="font-size: 1.8rem;"><img src="./Logos/SalmonCloud.png" style="width: 50px; height: auto;" alt="Salmon Cloud Logo">salmoncloud.co.uk</div>
+            <div style="margin: 10px;">Address: 128 City Road, London, United Kingdom, EC1V 2NX</div>
+            <!--<a href="https://discord.gg/X4Yxc8eaBw" style="color: #5b209a;"><i class="fa-brands fa-discord" style="font-size: 2rem;"></i></a>-->
+            <a style="margin: 10px;" href="https://discord.gg/X4Yxc8eaBw"><img src="/Logos/Discord.png" style="width: 40px; height: auto;"></a>
+            <div class="container" style="margin: 10px;">
+                <div class="row justify-content-center">
+                    <div class="col-2">Privacy Policy</div>
+                    <div class="col-2">Terms of Service</div>
+                </div>
+            </div>
+            <div style="margin: 10px;">© Copyright 2023-2024 SalmonCloud Ltd.. All Rights Reserved.</div>
         </div>
     </div>
     <script src="./app.js"></script>
