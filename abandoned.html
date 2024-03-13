@@ -1,0 +1,146 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SalmonCloud</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #F59033;
+            /*background-image: linear-gradient(to right, #ff6a00, #ee0979); #fbf3ba #f12711*/
+            background-image: linear-gradient(to right, #f59033, #E94057, #8A2387);
+            margin: 0;
+        }
+        .title {
+            font-family: 'Madimi One';
+        }
+        @keyframes bling {
+            from {
+                background-position: 0;
+            }
+            to {
+                background-position: 150px;
+            }
+        }
+        .salmon-color {
+            -webkit-background-clip: text;
+            background-image: linear-gradient(to right, #f59033, #fbf3ba, #f59033);
+            background-size: 150px;
+            color: transparent;
+            animation: bling 1s linear infinite;
+        }
+        .cloud-color {
+            -webkit-background-clip: text;
+            background-image: linear-gradient(to right, white, grey, white);
+            background-size: 150px;
+            color: transparent;
+            animation: bling 1s linear infinite;
+        }
+        .main-text {
+            font-family: 'Roboto';
+            color: white;
+        }
+        .card {
+            border-radius: 2rem;
+            padding: 2rem;
+            margin: 1rem;
+            border-radius: 1rem;
+            background: rgba(255, 255, 255, .6);
+            -webkit-backdrop-filter: blur(20px);
+            backdrop-filter: blur(5px);
+            box-shadow: 0 30px 10px rgba(0, 0, 0, 0.3);
+            /*flex: 0 0 calc(25% - 2rem);*/
+        }
+        .card-title {
+            margin-top: 0;
+            margin-bottom: .5rem;
+            font-size: 1.2rem;
+        }
+        .hover:hover {
+            /*background-color: green;*/
+        }
+        #test {
+            background-image: url("./pic.jpg");
+        }
+    </style>  
+</head>
+<body>
+    <div id="app">
+        <br>
+        <br>
+        <br>
+        <div class="container text-center">
+            <div class="title">
+                <h1 class="display-3">Empower Your Digital Journey With</h1>
+                <h1 class="display-1">
+                    <span class="salmon-color">Salmon</span>
+                    <span class="cloud-color">Cloud</span>
+                </h1>
+                <h5 class="display-6">Affordable VPS backed by Enterprise Hardware and a variety of choices.</h5>
+            </div>
+            <h1 class="display-1">[图片] Placeholder</h1>
+            <br>
+            <br>
+            <div class="row" style="margin: 40px;">
+                <div class="card col">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages
+                </div>
+                <div class="card col">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.
+                </div>
+                <div class="card col">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.
+                </div>
+                <div class="card col">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.
+                </div>
+            </div>
+            <div class="title">
+                <h1 class="display-2 salmon-color" style="margin-top: 140px;">Locations</h1>
+            </div>
+            <div class="row" style="margin: 40px;">
+                <div class="card col">
+                    <div class="title">
+                        <h1 class="display-5">San Jose [US]</h1>
+                    </div>
+                    <div class="text-start">
+                        <ul>
+                            <li>3rd Gen Epyc Milan Core</li>
+                            <li>3200MHz DDR4 ECC Memory</li>
+                            <li>Intel P5510 Gen 4 Datacenter NVMe RAID-10</li>
+                            <li>Dedicated IPv4 Address</li>
+                            <li>Dedicated IPv6 Block</li>
+                            <li>Modern UI, rDNS support, one-click installation of latest OS images</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card col">
+                    <div class="title">
+                        <h1 class="display-5">Hong Kong [CH]</h1>
+                    </div>
+                    <div class="text-start">
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
