@@ -109,7 +109,7 @@ body {
     content:'';
     position: absolute;
     top: 0;
-    left: 50;
+    left: 50px;
     width: 60%;
     height: 100%;
     background: #fff;
@@ -122,6 +122,7 @@ body {
 #os-library::before,
 #os-library::after {
     transform: skewX(0deg);
+    width: 0%;
 }
 
 .cus-container .box:hover:before,
@@ -136,26 +137,26 @@ body {
 #os-library:hover:after
 {
     transform: skewX(0deg);
-    left: 30px;
+    left: 50px;
     width: calc(100%);
 }
 
 .cus-container .box:nth-child(1):before,
 .cus-container .box:nth-child(1):after
 {
-    background: linear-gradient(315deg, #ff0058, #ffbc00)
+    background: linear-gradient(315deg, #d44c2c, #d44c2c)
 }
 
 .cus-container .box:nth-child(2):before,
 .cus-container .box:nth-child(2):after
 {
-    background: linear-gradient(315deg, #3F5EFB, #FC466B)
+    background: linear-gradient(315deg, #eee076, #eee076)
 }
 
 .cus-container .box:nth-child(3):before,
 .cus-container .box:nth-child(3):after
 {
-    background: linear-gradient(315deg, #373B44, #4286f4)
+    background: linear-gradient(315deg, #f59033, #f59033)
 }
 
 #os-library:before,
