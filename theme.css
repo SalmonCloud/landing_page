@@ -308,26 +308,32 @@ body {
 /* card and animation CSS end */
 
 
-/* For terms of service */
-.terms-of-service {
+/* For terms of service and privacy policy */
+.costum-page {
     font-family: sans-serif;
     color: black;
 }
 
-.terms-of-service ul,
-.terms-of-service p {
+.costum-page ul,
+.costum-page p {
     font-size: 1.3rem;
     margin: 0px;
 }
 
-.terms-of-service .tos-part {
+.costum-page > div {
     margin-top: 30px;
     margin-bottom: 20px;
 }
 
-.terms-of-service ul {
+.costum-page > div > ol {
+    font-size: 1.3rem;
+    margin-left: 40px;
+}
+
+.costum-page ul {
     margin: 20px;
 }
-.terms-of-service h1 {
+
+.costum-page h1 {
     padding-top: 30px;
 }
