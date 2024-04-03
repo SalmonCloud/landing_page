@@ -337,3 +337,12 @@ body {
 .costum-page h1 {
     padding-top: 30px;
 }
+
+.custom-ol {
+    font-size: 1.2rem;
+    margin: 0px;
+}
+
+.custom-ol > li {
+    margin: 2rem;
+}
