@@ -30,11 +30,25 @@ body {
     color: transparent;
     animation: bling 1s linear infinite;
 }
-.main-text {
+@media screen and (max-width: 800px) {
+    .main-text {
+        font-family: consolas;
+        font-size: 0.5rem;
+        color: white;
+    }
+}
+@media screen and (min-width: 800px) {
+    .main-text {
+        font-family: consolas;
+        font-size: 1.1rem;
+        color: white;
+    }
+}
+/* .main-text {
     font-family: consolas;
     font-size: 1.1rem;
     color: white;
-}
+} */
 .card {
     border-radius: 2rem;
     padding: 2rem;
@@ -62,7 +76,7 @@ body {
     background: #f59033;
 }
 #OS-libraries img{
-    width: 60px;
+    width: 40%;
     height: auto;
 }
 
