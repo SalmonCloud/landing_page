@@ -7,6 +7,17 @@ body {
 }
 .title {
     font-family: 'Madimi One';
+    font-size: 1rem;
+}
+.main-text {
+    font-family: consolas;
+    font-size: 1.1rem;
+    color: white;
+}
+.os-text {
+    font-family: consolas;
+    font-size: 1.1rem;
+    color: white;
 }
 @keyframes bling {
     from {
@@ -30,28 +41,43 @@ body {
     color: transparent;
     animation: bling 1s linear infinite;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) and (min-width: 400px) {
     .main-text {
-        font-family: consolas;
         font-size: 0.5rem;
-        color: white;
+    }
+    .title {
+        font-size: 1rem;
+    }
+    .os-text {
+        font-size: 0.7rem;
+    }
+    ul {
+        padding: 0.4px;
+    }
+    .card {
+        margin: 0rem
     }
 }
-@media screen and (min-width: 800px) {
+@media screen and (max-width: 400px) {
     .main-text {
-        font-family: consolas;
-        font-size: 1.1rem;
-        color: white;
+        font-size: 0.2rem;
+    }
+    .title {
+        font-size: 0.4rem;
+    }
+    .os-text {
+        font-size: 0.2rem;
+    }
+    ul {
+        padding: 0.2px;
+    }
+    .card {
+        margin: 0rem
     }
 }
-/* .main-text {
-    font-family: consolas;
-    font-size: 1.1rem;
-    color: white;
-} */
 .card {
-    border-radius: 2rem;
-    padding: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     margin: 1rem;
     border-radius: 1rem;
     background: rgba(255, 255, 255, 0.01);
