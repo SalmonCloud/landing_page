@@ -386,3 +386,8 @@ body {
 .custom-ol > li {
     margin: 2rem;
 }
+
+.custum-part {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
