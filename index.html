@@ -16,16 +16,19 @@
     <!-- <link rel="stylesheet" type="text/css" href="css/cookieconsent.min.css" /> -->
 </head>
 <body>
-    <nav class="navbar fixed-top navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar fixed-top navbar-expand bg-body-tertiary" expand="xs">
         <div class="container-fluid">
             <a class="navbar-brand" href="./index.html"><img src="./Logos/SalmonCloud.png" style="width: 70px; height: auto;" alt="Salmon Cloud Logo"></a>
             <div class="collapse navbar-collapse">
                 <div class="navbar-nav">
-                    <a class="nav-link main-text" href="https://billing.salmoncloud.co.uk/">Client Area</a>
+                    <!--<a class="nav-link main-text" href="https://billing.salmoncloud.co.uk/">Client Area</a>-->
+                    <a href="https://billing.salmoncloud.co.uk/">
+                        <button type="button" class="btn btn-outline-warning">Client Area</button>
+                    </a>
                 </div>
-              </div>
+            </div>
         </div>
-      </nav>
+    </nav>
     <br>
     <br>
     <br>
@@ -48,7 +51,7 @@
             <div class="box">
                 <span></span>
                 <div class="content">
-                <h2>Cloud Computing</h2>
+                <h2>VPS</h2>
                 <p>From AMD EPYC Milan CPUs to PCIe Gen 4 datacentre SSDs, our servers are built with state-of-the-art hardware to ensure performance and stability. Our VPS solutions offer flexible configuration options while with a premium network blend. Whether you need more CPU, memory, or storage space, we can meet your requirements.</p>
                 </div>
             </div>
@@ -72,8 +75,8 @@
         </div>
         <div class="row" style="margin: 40px;">
             <div class="card col">
-                <div>
-                    <h1 class="title">San Jose [US]</h1>
+                <div class="title">
+                    <h1>San Jose [US]</h1>
                 </div>
                 <div class="text-start main-text">
                     <ul>
@@ -84,17 +87,21 @@
                         <li>Dedicated IPv6 Block</li>
                         <li>Modern UI, rDNS support, one-click installation of latest OS images</li>
                     </ul>
-                    <div style="display: flex; justify-content: center; align-items: center;">
-                        <a href="https://salmoncloud.co.uk/store/san-jose-vps-metered" class="cus-button" style="text-align: center;">Explore Metered Plans</a>
+                    <div style="display: flex; justify-content: center; margin: auto;">
+                        <a href="https://salmoncloud.co.uk/store/san-jose-vps-metered">
+                            <button type="button" class="btn btn-outline-warning btn-lg">Metered Plans</button>
+                        </a>
+                        <div style="margin: 0 1rem;"></div>
+                        <a href="https://salmoncloud.co.uk/store/san-jose-vps-unmetered">
+                            <button type="button" class="btn btn-outline-warning btn-lg">Unmetered Plans</button>
+                        </a>
                     </div>
-                    <div style="display: flex; justify-content: center; align-items: center;">
-                        <a href="https://salmoncloud.co.uk/store/san-jose-vps-unmetered" class="cus-button" style="text-align: center;">Explore Unmetered Plans</a>
-                    </div>
+                    
                 </div>
             </div>
             <div class="card col">
-                <div>
-                    <h1 class="title">Hong Kong [HK]</h1>
+                <div class="title">
+                    <h1>Hong Kong [HK]</h1>
                 </div>
                 <div class="text-start main-text">
                     <ul>
@@ -106,7 +113,9 @@
                         <li>Modern UI, rDNS support, one-click installation of latest OS images</li>
                     </ul>
                     <div style="display: flex; justify-content: center; align-items: center;">
-                        <a href="https://salmoncloud.co.uk/store/hong-kong-vps-metered" class="cus-button" style="text-align: center;">Explore Plans</a>
+                        <a href="https://salmoncloud.co.uk/store/hong-kong-vps-metered">
+                            <button type="button" class="btn btn-outline-warning btn-lg">Explore Plans</button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -119,92 +128,94 @@
             *Note: Windows template is only available for Advanced and Supreme packages.
         </div>
         <div class="cus-container os-text">
-            <div class="box" id="os-library" style="width: 1000px; height: 50rem;">
+            <div class="box" id="os-library">
                 <span></span>
                 <div class="content" style="width: 100%;">
-                <h2 class="title" style="margin-bottom: 40px;">OS Library</h2>
-                <div class="container" id="OS-libraries">
-                    <div class="row" style="margin-bottom: 20px;">
-                        <div class="col">
-                            <img src="./Logos/FreeBSD.webp">
-                        </div>
-                        <div class="col">
-                            <img src="./Logos/ArchLinux.png">
-                        </div>
-                        <div class="col" style="display: flex; align-items: center; justify-content: center;">
-                            <img src="./Logos/OracleLinux.svg.png">
-                        </div>
-                        <div class="col" style="display: flex; align-items: center; justify-content: center;">
-                            <img src="./Logos/Debian.png">
-                        </div>
+                    <div class="title" style="margin: 2rem;">
+                        <h1>OS Library</h1>
                     </div>
-                    <div class="row" style="margin-bottom: 40px;">
-                        <div class="col">
-                            <p>FreeBSD</p>
+                    <div class="container" id="OS-libraries">
+                        <div class="row" style="margin-bottom: 20px;">
+                            <div class="col">
+                                <img src="./Logos/FreeBSD.webp">
+                            </div>
+                            <div class="col">
+                                <img src="./Logos/ArchLinux.png">
+                            </div>
+                            <div class="col" style="display: flex; align-items: center; justify-content: center;">
+                                <img src="./Logos/OracleLinux.svg.png">
+                            </div>
+                            <div class="col" style="display: flex; align-items: center; justify-content: center;">
+                                <img src="./Logos/Debian.png">
+                            </div>
                         </div>
-                        <div class="col">
-                            <p>Arch Linux</p>
+                        <div class="row" style="margin-bottom: 40px;">
+                            <div class="col">
+                                <p>FreeBSD</p>
+                            </div>
+                            <div class="col">
+                                <p>Arch Linux</p>
+                            </div>
+                            <div class="col">
+                                <p>Oracle Linux</p>
+                            </div>
+                            <div class="col">
+                                <p>Debian</p>
+                            </div>
                         </div>
-                        <div class="col">
-                            <p>Oracle Linux</p>
-                        </div>
-                        <div class="col">
-                            <p>Debian</p>
-                        </div>
-                    </div>
 
-                    <div class="row" style="margin-bottom: 20px;">
-                        <div class="col">
-                            <img src="./Logos/RockyLinux.svg.png">
+                        <div class="row" style="margin-bottom: 20px;">
+                            <div class="col">
+                                <img src="./Logos/RockyLinux.svg.png">
+                            </div>
+                            <div class="col">
+                                <img src="./Logos/AlmaLinux.png">
+                            </div>
+                            <div class="col">
+                                <img src="./Logos/Ubuntu.svg.png">
+                            </div>
+                            <div class="col">
+                                <img src="./Logos/Fedora.svg.png">
+                            </div>
                         </div>
-                        <div class="col">
-                            <img src="./Logos/AlmaLinux.png">
+                        <div class="row" style="margin-bottom: 40px;">
+                            <div class="col">
+                                <p>Rocky Linux</p>
+                            </div>
+                            <div class="col">
+                                <p>Alma Linux</p>
+                            </div>
+                            <div class="col">
+                                <p>Ubuntu</p>
+                            </div>
+                            <div class="col">
+                                <p>Fedora</p>
+                            </div>
                         </div>
-                        <div class="col">
-                            <img src="./Logos/Ubuntu.svg.png">
-                        </div>
-                        <div class="col">
-                            <img src="./Logos/Fedora.svg.png">
-                        </div>
-                    </div>
-                    <div class="row" style="margin-bottom: 40px;">
-                        <div class="col">
-                            <p>Rocky Linux</p>
-                        </div>
-                        <div class="col">
-                            <p>Alma Linux</p>
-                        </div>
-                        <div class="col">
-                            <p>Ubuntu</p>
-                        </div>
-                        <div class="col">
-                            <p>Fedora</p>
-                        </div>
-                    </div>
 
-                    <div class="row" style="margin-bottom: 20px;">
-                        <div class="col-3">
-                            <img src="./Logos/OpenSUSE.png">
+                        <div class="row" style="margin-bottom: 20px;">
+                            <div class="col-3">
+                                <img src="./Logos/OpenSUSE.png">
+                            </div>
+                            <div class="col-3">
+                                <img src="./Logos/CentOS.svg.png">
+                            </div>
+                            <div class="col-3">
+                                <img src="./Logos/Windows.webp">
+                            </div>
                         </div>
-                        <div class="col-3">
-                            <img src="./Logos/CentOS.svg.png">
-                        </div>
-                        <div class="col-3">
-                            <img src="./Logos/Windows.webp">
+                        <div class="row" style="margin-bottom: 40px;">
+                            <div class="col-3">
+                                <p>openSUSE</p>
+                            </div>
+                            <div class="col-3">
+                                <p>CentOS</p>
+                            </div>
+                            <div class="col-3">
+                                <p>Windows</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="row" style="margin-bottom: 40px;">
-                        <div class="col-3">
-                            <p>openSUSE</p>
-                        </div>
-                        <div class="col-3">
-                            <p>CentOS</p>
-                        </div>
-                        <div class="col-3">
-                            <p>Windows</p>
-                        </div>
-                    </div>
-                </div>
                 
                 </div>
             </div>
@@ -228,10 +239,15 @@
                         <a href="./terms_of_service.html">
                             Terms of Service
                         </a>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="https://salmoncloud.statuspage.io/">
+                            Service Status
+                        </a>
                     </span>
                 </div>
             </div>
-            <div style="margin: 10px;">© Copyright 2023-2024 SalmonCloud Ltd.. All Rights Reserved.</div>
+            <div style="margin: 10px;">© Copyright 2023-2024 SalmonCloud Ltd. All Rights Reserved.</div>
         </div>
     </div>
     <script src="./app.js"></script>

@@ -41,7 +41,7 @@ body {
     color: transparent;
     animation: bling 1s linear infinite;
 }
-@media screen and (max-width: 600px) and (min-width: 400px) {
+/* @media screen and (max-width: 600px) and (min-width: 400px) {
     .main-text {
         font-size: 0.5rem;
     }
@@ -57,27 +57,11 @@ body {
     .card {
         margin: 0rem
     }
-}
-@media screen and (max-width: 400px) {
-    .main-text {
-        font-size: 0.2rem;
-    }
-    .title {
-        font-size: 0.4rem;
-    }
-    .os-text {
-        font-size: 0.2rem;
-    }
-    ul {
-        padding: 0.2px;
-    }
-    .card {
-        margin: 0rem
-    }
-}
+} */
+
 .card {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    min-width: 18rem;
+    padding: 2rem;
     margin: 1rem;
     border-radius: 1rem;
     background: rgba(255, 255, 255, 0.01);
@@ -171,6 +155,11 @@ body {
     transform: skewX(0deg);
     left: 20px;
     width: calc(100% - 90px);
+}
+
+#os-library {
+    width: 1000px;
+    height: auto;
 }
 
 #os-library:hover:before,
@@ -326,7 +315,6 @@ body {
 .cus-button,
 .cus-container .box .content a
 {
-    display: inline-block;
     font-size: 1.1em;
     color: #111;
     background: #fff;
@@ -335,6 +323,7 @@ body {
     text-decoration: none;
     font-weight: 700;
     margin-top: 5px;
+    width: fit-content;
 }
 
 .cus-button:hover,
@@ -349,32 +338,32 @@ body {
 
 
 /* For terms of service and privacy policy */
-.costum-page {
+.custom-page {
     font-family: sans-serif;
     color: black;
 }
 
-.costum-page ul,
-.costum-page p {
+.custom-page ul,
+.custom-page p {
     font-size: 1.3rem;
     margin: 0px;
 }
 
-.costum-page > div {
+.custom-page > div {
     margin-top: 30px;
     margin-bottom: 20px;
 }
 
-.costum-page > div > ol {
+.custom-page > div > ol {
     font-size: 1.3rem;
     margin-left: 40px;
 }
 
-.costum-page ul {
+.custom-page ul {
     margin: 20px;
 }
 
-.costum-page h1 {
+.custom-page h1 {
     padding-top: 30px;
 }
 
@@ -385,4 +374,36 @@ body {
 
 .custom-ol > li {
     margin: 2rem;
+}
+
+.custom-part {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* To accomodate small screens */
+@media screen and (max-width: 600px) {
+    .main-text {
+        font-size: 1rem;
+    }
+    .title {
+        font-size: 1.4rem;
+    }
+    .os-text {
+        font-size: 0.6rem;
+    }
+    ul {
+        padding: 0.2px;
+    }
+    .card {
+        margin: 0rem
+    }
+    #OS-libraries img{
+        width: 100%;
+    }
+    #os-library:hover:before,
+    #os-library:hover:after
+    {
+        left: 5px;
+    }
 }
