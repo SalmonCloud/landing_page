@@ -397,6 +397,7 @@ body {
     width: 1em;
     height: 1em;
     border-radius: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .pin::before {
@@ -420,7 +421,7 @@ body {
     transform: translateY(-50%);
     background: #fff;
     border-radius: 3em;
-    padding: 0.3em 0.6em;
+    padding: 0.2em 0.4em;
     font-size: 1em;
 }
 
@@ -429,17 +430,22 @@ body {
 }
 
 .left-span {
-    left: -6em;
+    left: -5em;
 }
 
 .sanjose {
-    top: 30%;
-    left: 16.5%;
+    top: 30.3%;
+    left: 17.2%;
 }
 
 .hongkong {
-    top: 40.5%;
-    left: 80.6%;
+    top: 41.6%;
+    left: 81.1%;
+}
+
+.location-text {
+    font-family: 'Madimi One';
+    font-size: 1.1rem;
 }
 
 @keyframes pulse {
@@ -452,6 +458,12 @@ body {
 
 
 /* To accomodate small screens */
+@media screen and (max-width: 800px) {
+    .pin {
+        width: 0.7em;
+        height: 0.7em;
+    }
+}
 @media screen and (max-width: 600px) {
     .main-text {
         font-size: 1rem;
@@ -475,5 +487,12 @@ body {
     #os-library:hover:after
     {
         left: 5px;
+    }
+    .location-text {
+        font-size: 0.5rem;
+    }
+    .pin {
+        width: 0.6em;
+        height: 0.6em;
     }
 }
