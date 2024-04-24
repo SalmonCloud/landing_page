@@ -7,7 +7,6 @@ body {
 }
 .title {
     font-family: 'Madimi One';
-    font-size: 1rem;
 }
 .main-text {
     font-family: consolas;
@@ -455,13 +454,31 @@ body {
     }
 }
 
+/* For benchmark results */
+.benchmark_text {
+    font-size: 0.6rem;
+}
+
 
 
 /* To accomodate small screens */
+@media screen and (max-width: 1200px) {
+    .benchmark_text {
+        font-size: 0.5rem;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .benchmark_text {
+        font-size: 0.3rem;
+    }
+}
 @media screen and (max-width: 800px) {
     .pin {
         width: 0.7em;
         height: 0.7em;
+    }
+    .benchmark_text {
+        font-size: 0.25rem;
     }
 }
 @media screen and (max-width: 600px) {
