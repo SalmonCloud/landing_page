@@ -1,0 +1,280 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Benchmark Result</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Customed CSS -->
+    <link rel="stylesheet" href="./theme.css">
+    <!-- Cookie -->
+    <script src="https://cmp.osano.com/AzZZAJUAshe2u4UF9/7e208288-b33a-4c05-9417-160a383d4f50/osano.js"></script>
+    <!-- Google Analytics -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FVLZVLXNC1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-FVLZVLXNC1');
+    </script>
+</head>
+<body>
+    <nav class="navbar fixed-top navbar-expand bg-body-tertiary" expand="xs">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html"><img src="./Logos/SalmonCloud.png" style="width: 70px; height: auto;" alt="Salmon Cloud Logo"></a>
+            <div class="collapse navbar-collapse">
+                <div class="navbar-nav">
+                    <!--<a class="nav-link main-text" href="https://billing.salmoncloud.co.uk/">Client Area</a>-->
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://billing.salmoncloud.co.uk/">
+                                <button type="button" class="btn btn-outline-warning">Client Area</button>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <div class="nav-link btn-group">
+                                <button type="button" class="btn btn-outline-warning dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                    Looking Glass
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a class="dropdown-item" href="http://sjc.lg.salmoncloud.co.uk/">San Jose</a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="http://hkg.lg.salmoncloud.co.uk/">Hong Kong</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://salmoncloud.statuspage.io/">
+                                <button type="button" class="btn btn-outline-warning">Server Status</button>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./benchmark_result.html">
+                                <button type="button" class="btn btn-outline-warning">Server Benckmark</button>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <div class="container text-center">
+        <div class="title">
+            <h1 class="display-1">
+                <img src="./Logos/SalmonCloud.png" style="width: 120px; height: auto;" alt="Salmon Cloud Logo">
+                <span class="salmon-color">Salmon</span><span class="cloud-color">Cloud</span>
+                <span> Server Benchmark</span>
+            </h1>
+        </div>
+
+        <div class="row">
+            <!-- San Jose Result -->
+            <div class="col-6">
+                <div class="title">
+                    <h1 class="display-2 salmon-color" style="margin-top: 10px;">San Jose</h1>
+                </div>
+                <pre>
+                    <textarea class="form-control benchmark_text" id="SJ_Benchmark" rows="50" style="background-color: black; color: white;" readonly>
+# ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## #
+#              Yet-Another-Bench-Script              #
+#                     v2024-01-01                    #
+# https://github.com/masonr/yet-another-bench-script #
+# ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## #
+
+Mon Feb 12 05:37:13 PM CST 2024
+
+Basic System Information:
+---------------------------------
+Uptime     : 0 days, 0 hours, 32 minutes
+Processor  : AMD EPYC 7R13 48-Core Processor
+CPU cores  : 2 @ 2645.030 MHz
+AES-NI     : ✔️ Enabled
+VM-x/AMD-V : ✔️ Enabled
+RAM        : 1.9 GiB
+Swap       : 0.0 KiB
+Disk       : 29.9 GiB
+Distro     : Debian GNU/Linux 12 (bookworm)
+Kernel     : 6.1.0-9-amd64
+VM Type    : KVM
+IPv4/IPv6  : ✔️ Online / ✔️ Online
+
+IPv6 Network Information:
+---------------------------------
+ISP        : ASYMPTOTE NETWORK, LLC
+ASN        : AS53616 ASYMPTOTE NETWORK, LLC
+Host       : ASYMPTOTE NETWORK, LLC
+Location   : San Jose, California (CA)
+Country    : United States
+
+fio Disk Speed Tests (Mixed R/W 50/50) (Partition /dev/vda3):
+---------------------------------
+Block Size | 4k            (IOPS) | 64k           (IOPS)
+  ------   | ---            ----  | ----           ---- 
+Read       | 80.08 MB/s   (20.0k) | 1.01 GB/s    (15.9k)
+Write      | 80.29 MB/s   (20.0k) | 1.02 GB/s    (15.9k)
+Total      | 160.38 MB/s  (40.0k) | 2.04 GB/s    (31.9k)
+           |                      |                     
+Block Size | 512k          (IOPS) | 1m            (IOPS)
+  ------   | ---            ----  | ----           ---- 
+Read       | 971.41 MB/s   (1.8k) | 958.70 MB/s    (936)
+Write      | 1.02 GB/s     (1.9k) | 1.02 GB/s      (998)
+Total      | 1.99 GB/s     (3.8k) | 1.98 GB/s     (1.9k)
+
+iperf3 Network Speed Tests (IPv4):
+---------------------------------
+Provider        | Location (Link)           | Send Speed      | Recv Speed      | Ping           
+-----           | -----                     | ----            | ----            | ----           
+Clouvider       | London, UK (10G)          | 1.36 Gbits/sec  | 687 Mbits/sec   | 129 ms         
+Scaleway        | Paris, FR (10G)           | 3.41 Gbits/sec  | 3.94 Gbits/sec  | 136 ms         
+NovoServe       | North Holland, NL (40G)   | 1.29 Gbits/sec  | 1.42 Gbits/sec  | 133 ms         
+Uztelecom       | Tashkent, UZ (10G)        | 1.58 Gbits/sec  | 196 Mbits/sec   | 216 ms         
+Clouvider       | NYC, NY, US (10G)         | 3.05 Gbits/sec  | 777 Mbits/sec   | 63.9 ms        
+Clouvider       | Dallas, TX, US (10G)      | 3.14 Gbits/sec  | 1.67 Gbits/sec  | 37.1 ms        
+Clouvider       | Los Angeles, CA, US (10G) | 4.57 Gbits/sec  | 2.12 Gbits/sec  | 9.94 ms        
+
+iperf3 Network Speed Tests (IPv6):
+---------------------------------
+Provider        | Location (Link)           | Send Speed      | Recv Speed      | Ping           
+-----           | -----                     | ----            | ----            | ----           
+Clouvider       | London, UK (10G)          | 1.37 Gbits/sec  | 723 Mbits/sec   | 129 ms         
+Scaleway        | Paris, FR (10G)           | busy            | busy            | 134 ms         
+NovoServe       | North Holland, NL (40G)   | 1.28 Gbits/sec  | 1.54 Gbits/sec  | 133 ms         
+Uztelecom       | Tashkent, UZ (10G)        | 1.44 Gbits/sec  | 153 Mbits/sec   | 216 ms         
+Clouvider       | NYC, NY, US (10G)         | 3.02 Gbits/sec  | 1.09 Gbits/sec  | 64.0 ms        
+Clouvider       | Dallas, TX, US (10G)      | 5.03 Gbits/sec  | 2.05 Gbits/sec  | 37.1 ms        
+Clouvider       | Los Angeles, CA, US (10G) | 7.65 Gbits/sec  | 5.94 Gbits/sec  | 9.89 ms        
+
+Geekbench 6 Benchmark Test:
+---------------------------------
+Test            | Value                         
+                |                               
+Single Core     | 1722                          
+Multi Core      | 3057                          
+Full Test       | https://browser.geekbench.com/v6/cpu/4887254
+
+YABS completed in 14 min 37 sec
+root@medium-test:~#
+                    </textarea>
+                </pre>
+            </div>
+
+
+            <!-- Hong Kong Result -->
+            <div class="col-6">
+                <div class="title">
+                    <h1 class="display-2 salmon-color" style="margin-top: 10px;">Hong Kong</h1>
+                </div>
+                <pre>
+                    <textarea class="form-control benchmark_text" id="SJ_Benchmark" rows="50" style="background-color: black; color: white;" readonly>
+# ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## #
+#              Yet-Another-Bench-Script              #
+#                     v2024-03-05                    #
+# https://github.com/masonr/yet-another-bench-script #
+# ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## ## #
+
+Fri Mar 29 02:28:16 AM GMT 2024
+
+Basic System Information:
+---------------------------------
+Uptime     : 0 days, 0 hours, 3 minutes
+Processor  : AMD EPYC 7T83 64-Core Processor
+CPU cores  : 2 @ 2445.406 MHz
+AES-NI     : ✔ Enabled
+VM-x/AMD-V : ✔ Enabled
+RAM        : 1.9 GiB
+Swap       : 0.0 KiB
+Disk       : 29.9 GiB
+Distro     : Debian GNU/Linux 12 (bookworm)
+Kernel     : 6.1.0-9-amd64
+VM Type    : KVM
+IPv4/IPv6  : ✔ Online / ✔ Online
+
+IPv6 Network Information:
+---------------------------------
+ISP        : Asymptote Network
+ASN        : AS53616 ASYMPTOTE NETWORK, LLC
+Host       : ASYMPTOTE NETWORK, LLC
+Location   : San Jose, California (CA)
+Country    : United States
+
+fio Disk Speed Tests (Mixed R/W 50/50) (Partition /dev/vda3):
+---------------------------------
+Block Size | 4k            (IOPS) | 64k           (IOPS)
+    ------   | ---            ----  | ----           ---- 
+Read       | 80.10 MB/s   (20.0k) | 1.01 GB/s    (15.9k)
+Write      | 80.31 MB/s   (20.0k) | 1.02 GB/s    (15.9k)
+Total      | 160.41 MB/s  (40.1k) | 2.04 GB/s    (31.9k)
+            |                      |                     
+Block Size | 512k          (IOPS) | 1m            (IOPS)
+    ------   | ---            ----  | ----           ---- 
+Read       | 973.26 MB/s   (1.9k) | 952.40 MB/s    (930)
+Write      | 1.02 GB/s     (2.0k) | 1.01 GB/s      (992)
+Total      | 1.99 GB/s     (3.9k) | 1.96 GB/s     (1.9k)
+
+Geekbench 6 Benchmark Test:
+---------------------------------
+Test            | Value                         
+                |                               
+Single Core     | 1584                          
+Multi Core      | 2905                          
+Full Test       | https://browser.geekbench.com/v6/cpu/5509514
+
+YABS completed in 7 min 34 sec
+                    </textarea>
+                </pre>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="title" style="font-size: 1.4rem; text-align: center; margin: 20px;">
+            <div style="font-size: 1.8rem;"><img src="./Logos/SalmonCloud.png" style="width: 50px; height: auto;" alt="Salmon Cloud Logo">SalmonCloud</div>
+            <div style="margin: 10px;">Address: 128 City Road, London, United Kingdom, EC1V 2NX</div>
+            <div style="margin: 10px;">Email Address: contact@salmoncloud.co.uk</div>
+            <div style="margin: 10px;">Phone Number: +44 020 3376 6472</div>
+            <!--<a href="https://discord.gg/X4Yxc8eaBw" style="color: #5b209a;"><i class="fa-brands fa-discord" style="font-size: 2rem;"></i></a>-->
+            <a style="margin: 10px;" href="https://discord.gg/X4Yxc8eaBw"><img src="/Logos/Discord.png" style="width: 40px; height: auto;"></a>
+            <div class="container" style="margin: 10px;">
+                <div class="row justify-content-center">
+                    <span>
+                        <a href="./privacy_policy.html">
+                            Privacy Policy
+                        </a>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="./terms_of_service.html">
+                            Terms of Service
+                        </a>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="https://salmoncloud.statuspage.io/">
+                            Service Status
+                        </a>
+                    </span>
+                </div>
+            </div>
+            <div style="margin: 10px;">© Copyright 2023-2024 SalmonCloud Ltd. All Rights Reserved.</div>
+
+    </div>
+
+
+    </div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/6a4a94fefd.js" crossorigin="anonymous"></script>
+</body>
+</html>
