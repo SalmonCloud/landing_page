@@ -12,6 +12,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Madimi+One&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <!-- Customed CSS -->
     <link rel="stylesheet" href="./theme.css">
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <!-- Load Navbar and Footer -->
+    <script src="./scripts/load_navbar_footer.js"></script>
     <!-- Cookie -->
     <script src="https://cmp.osano.com/AzZZAJUAshe2u4UF9/7e208288-b33a-4c05-9417-160a383d4f50/osano.js"></script>
     <!-- Google Analytics -->
@@ -27,50 +31,7 @@
 </head>
 <body>
     <!-- Nav Bar -->
-    <nav class="navbar fixed-top navbar-expand bg-body-tertiary" expand="xs">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="./index.html"><img src="./Logos/SalmonCloud.png" style="width: 70px; height: auto;" alt="Salmon Cloud Logo"></a>
-            <div class="collapse navbar-collapse">
-                <div class="navbar-nav">
-                    <!--<a class="nav-link main-text" href="https://billing.salmoncloud.co.uk/">Client Area</a>-->
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://billing.salmoncloud.co.uk/">
-                                <button type="button" class="btn btn-outline-warning">Client Area</button>
-                            </a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <div class="nav-link btn-group">
-                                <button type="button" class="btn btn-outline-warning dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <i class="fa-solid fa-magnifying-glass"></i>
-                                    Looking Glass
-                                </button>
-                                <ul class="dropdown-menu">
-                                    <li>
-                                        <a class="dropdown-item" href="http://sjc.lg.salmoncloud.co.uk/">San Jose</a>
-                                    </li>
-                                    <li>
-                                        <a class="dropdown-item" href="http://hkg.lg.salmoncloud.co.uk/">Hong Kong</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://salmoncloud.statuspage.io/">
-                                <button type="button" class="btn btn-outline-warning">Server Status</button>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./benchmark_result.html">
-                                <button type="button" class="btn btn-outline-warning">Server Benckmark</button>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </nav>
-    </nav>
+    <div id="navbar-placeholder"></div>
     <br>
     <br>
     <br>
@@ -433,35 +394,7 @@
 
 
         <!-- Footer -->
-        <div class="title" style="font-size: 1.4rem; text-align: center; margin: 20px;">
-            <div style="font-size: 1.8rem;"><img src="./Logos/SalmonCloud.png" style="width: 50px; height: auto;" alt="Salmon Cloud Logo">SalmonCloud</div>
-            <div style="margin: 10px;">Address: 128 City Road, London, United Kingdom, EC1V 2NX</div>
-            <div style="margin: 10px;">Email Address: contact@salmoncloud.co.uk</div>
-            <div style="margin: 10px;">Phone Number: +44 020 3376 6472</div>
-            <!--<a href="https://discord.gg/X4Yxc8eaBw" style="color: #5b209a;"><i class="fa-brands fa-discord" style="font-size: 2rem;"></i></a>-->
-            <a style="margin: 10px;" href="https://discord.gg/X4Yxc8eaBw"><img src="/Logos/Discord.png" style="width: 40px; height: auto;"></a>
-            <div class="container" style="margin: 10px;">
-                <div class="row justify-content-center">
-                    <span>
-                        <a href="./privacy_policy.html">
-                            Privacy Policy
-                        </a>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <a href="./terms_of_service.html">
-                            Terms of Service
-                        </a>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <a href="https://salmoncloud.statuspage.io/">
-                            Service Status
-                        </a>
-                    </span>
-                </div>
-            </div>
-            <div style="margin: 10px;">© Copyright 2023-2024 SalmonCloud Ltd. All Rights Reserved.</div>
-        </div>
-
+        <div id="footer-placeholder"></div>
     </div>
 
 
