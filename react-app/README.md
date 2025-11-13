@@ -1,16 +1,37 @@
-# React + Vite
+# SalmonCloud Landing (React)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains the SalmonCloud marketing site rebuilt with Vite + React. It uses a shared design system (light/dark theme, frosted cards, etc.) and pulls legal pages directly from the original static HTML.
 
-Currently, two official plugins are available:
+## Getting Started
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+```bash
+git clone https://github.com/salmoncloud/landing_page.git
+cd landing_page/react-app
+npm install
+npm run dev
+```
 
-## React Compiler
+Open the URL printed by Vite (default `http://localhost:5173/`) to preview the site.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Production Build
 
-## Expanding the ESLint configuration
+```bash
+npm run build
+npm run preview
+```
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Structure
+
+- `src/App.jsx` – wraps layout, routes, theme context
+- `src/components/layout` – navigation, footer, etc.
+- `src/components/sections` – hero, metrics, services, map, OS library, CTA, community, status/legal bar
+- `src/data/siteData.js` – copy + card metadata, dropdown items, etc.
+- `src/context/ThemeContext.jsx` – light/dark theme toggler using `data-theme`
+- `src/content` – HTML used for Privacy and Terms pages
+
+## Requirements
+
+- Node.js 20.8+ (project currently uses Vite 5, compatible with Node 20.8.0)
+- npm 10+
+
+You may see engine warnings if Node < 20.19, but build/dev still function.
