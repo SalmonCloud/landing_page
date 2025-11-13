@@ -85,7 +85,7 @@ const Navigation = () => {
               toggleTheme();
             }}
           >
-            {theme === 'light' ? '☾ Dark' : '☀ Light'}
+            {theme === 'light' ? '☾ Dark Mode' : '☀ Light Mode'}
           </button>
           {location.pathname !== '/' && (
             <Link to="/" className="ghost-btn">

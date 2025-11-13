@@ -84,14 +84,14 @@ export const communityLinks = [
     label: '中文社区 · Telegram',
     handle: 't.me/salmoncloud_official',
     href: 'https://t.me/salmoncloud_official',
-    logo: '/Logos/Telegram_icon.svg',
+    logo: '/Logos/Telegram.png',
     alt: 'Telegram logo'
   },
   {
     label: 'English Community · Discord',
     handle: 'discord.gg/4Vja6qKQ',
     href: 'https://discord.gg/4Vja6qKQ',
-    logo: '/Logos/Discord_icon.svg',
+    logo: '/Logos/Discord.png',
     alt: 'Discord logo'
   }
 ];

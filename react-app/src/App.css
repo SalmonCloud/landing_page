@@ -122,12 +122,19 @@
 }
 
 .hero-visual {
-  background: color-mix(in srgb, var(--surface) 85%, transparent);
+  position: relative;
+  background: color-mix(in srgb, var(--surface) 90%, transparent);
   border-radius: 32px;
   padding: 2.5rem;
   border: 1px solid color-mix(in srgb, var(--border) 60%, transparent);
-  box-shadow: 0 35px 80px rgba(15, 23, 42, 0.2);
-  backdrop-filter: blur(25px);
+  box-shadow: 0 45px 90px rgba(15, 23, 42, 0.25);
+  backdrop-filter: blur(28px);
+  overflow: hidden;
+}
+
+.hero-visual > * {
+  position: relative;
+  z-index: 1;
 }
 
 .hero-grid {
@@ -137,12 +144,19 @@
 }
 
 .hero-grid .mini-card {
+  position: relative;
   padding: 1.25rem;
   border-radius: 20px;
-  background: color-mix(in srgb, var(--surface) 80%, transparent);
-  border: 1px solid color-mix(in srgb, var(--border) 60%, transparent);
-  box-shadow: 0 25px 55px rgba(15, 23, 42, 0.18);
-  backdrop-filter: blur(18px);
+  background: color-mix(in srgb, var(--surface) 96%, transparent);
+  border: 1px solid color-mix(in srgb, var(--border) 75%, transparent);
+  box-shadow: 0 35px 70px rgba(15, 23, 42, 0.32);
+  backdrop-filter: blur(20px);
+  overflow: hidden;
+}
+
+.hero-grid .mini-card > * {
+  position: relative;
+  z-index: 1;
 }
 
 .hero-grid h4 {
@@ -165,12 +179,19 @@
 }
 
 .metric-card {
+  position: relative;
   padding: 1.5rem;
   border-radius: 18px;
   border: 1px solid color-mix(in srgb, var(--border) 55%, transparent);
-  background: color-mix(in srgb, var(--surface) 80%, transparent);
-  box-shadow: 0 30px 65px rgba(15, 23, 42, 0.18);
-  backdrop-filter: blur(16px);
+  background: color-mix(in srgb, var(--surface) 88%, transparent);
+  box-shadow: 0 30px 65px rgba(15, 23, 42, 0.2);
+  backdrop-filter: blur(18px);
+  overflow: hidden;
+}
+
+.metric-card > * {
+  position: relative;
+  z-index: 1;
 }
 
 .metric-card h3 {
@@ -184,15 +205,22 @@
 }
 
 .services-grid .service-card {
+  position: relative;
   padding: 2.25rem;
   border-radius: 28px;
   border: 1px solid color-mix(in srgb, var(--border) 60%, transparent);
-  background: color-mix(in srgb, var(--surface) 82%, transparent);
-  box-shadow: 0 45px 90px rgba(15, 23, 42, 0.25);
-  backdrop-filter: blur(28px);
+  background: color-mix(in srgb, var(--surface) 90%, transparent);
+  box-shadow: 0 50px 95px rgba(15, 23, 42, 0.28);
+  backdrop-filter: blur(30px);
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
+  overflow: hidden;
+}
+
+.services-grid .service-card > * {
+  position: relative;
+  z-index: 1;
 }
 
 .service-header {
@@ -249,13 +277,20 @@
 }
 
 .map-panel {
+  position: relative;
   margin-top: 3rem;
   padding: 2rem;
   border-radius: 32px;
-  background: color-mix(in srgb, var(--surface) 85%, transparent);
+  background: color-mix(in srgb, var(--surface) 92%, transparent);
   border: 1px solid color-mix(in srgb, var(--border) 60%, transparent);
-  box-shadow: 0 40px 90px rgba(15, 23, 42, 0.22);
-  backdrop-filter: blur(24px);
+  box-shadow: 0 45px 95px rgba(15, 23, 42, 0.25);
+  backdrop-filter: blur(26px);
+  overflow: hidden;
+}
+
+.map-panel > * {
+  position: relative;
+  z-index: 1;
 }
 
 .map-wrapper {
@@ -308,17 +343,24 @@
 }
 
 .os-card {
+  position: relative;
   border: 1px solid color-mix(in srgb, var(--border) 55%, transparent);
   border-radius: 20px;
   padding: 1.5rem;
-  background: color-mix(in srgb, var(--surface) 78%, transparent);
+  background: color-mix(in srgb, var(--surface) 88%, transparent);
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
   align-items: center;
   justify-content: center;
-  backdrop-filter: blur(16px);
-  box-shadow: 0 25px 60px rgba(15, 23, 42, 0.18);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 32px 70px rgba(15, 23, 42, 0.22);
+  overflow: hidden;
+}
+
+.os-card > * {
+  position: relative;
+  z-index: 1;
 }
 
 .os-card img {
@@ -349,34 +391,30 @@
 }
 
 .community-card {
+  position: relative;
   border: 1px solid color-mix(in srgb, var(--border) 60%, transparent);
   border-radius: 20px;
   padding: 1.5rem;
   display: flex;
   gap: 1rem;
   align-items: center;
-  background: color-mix(in srgb, var(--surface) 80%, transparent);
-  backdrop-filter: blur(18px);
-  box-shadow: 0 30px 70px rgba(15, 23, 42, 0.2);
-  transition: transform 0.2s ease, box-shadow 0.2s ease, border 0.2s ease;
+  background: color-mix(in srgb, var(--surface) 88%, transparent);
+  backdrop-filter: blur(22px);
+  box-shadow: 0 40px 90px rgba(15, 23, 42, 0.25);
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.35s ease, border 0.35s ease, background 0.35s ease;
+  overflow: hidden;
 }
 
 .community-card:hover {
-  transform: translateY(-4px);
-  border-color: color-mix(in srgb, var(--border-strong) 60%, transparent);
-  box-shadow: 0 30px 80px rgba(15, 23, 42, 0.25);
+  transform: translate3d(0, -3px, 0) scale(1.005);
+  border-color: color-mix(in srgb, var(--border-strong) 75%, transparent);
+  box-shadow: 0 60px 120px rgba(5, 8, 28, 0.55);
+  background: color-mix(in srgb, var(--surface) 62%, transparent);
 }
 
-.community-card p {
-  margin: 0.2rem 0 0;
-  color: var(--text-muted);
-  font-size: 0.95rem;
-}
-
-.community-card:hover {
-  transform: translateY(-2px);
-  border-color: rgba(15, 23, 42, 0.15);
-  box-shadow: 0 15px 35px rgba(15, 23, 42, 0.08);
+.community-card > * {
+  position: relative;
+  z-index: 1;
 }
 
 .community-card p {
@@ -422,7 +460,8 @@
   padding: 0.45rem 0.95rem;
   border-radius: 999px;
   border: 1px solid transparent;
-  background: var(--surface);
+  background: color-mix(in srgb, var(--surface) 85%, transparent);
+  backdrop-filter: blur(12px);
   transition: background 0.2s ease;
 }
 
