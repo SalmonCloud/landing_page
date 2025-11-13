@@ -122,11 +122,12 @@
 }
 
 .hero-visual {
-  background: radial-gradient(circle at top, rgba(255, 107, 53, 0.15), transparent 55%), var(--surface);
+  background: color-mix(in srgb, var(--surface) 85%, transparent);
   border-radius: 32px;
   padding: 2.5rem;
-  border: 1px solid var(--border);
-  box-shadow: var(--card-shadow);
+  border: 1px solid color-mix(in srgb, var(--border) 60%, transparent);
+  box-shadow: 0 35px 80px rgba(15, 23, 42, 0.2);
+  backdrop-filter: blur(25px);
 }
 
 .hero-grid {
@@ -138,8 +139,10 @@
 .hero-grid .mini-card {
   padding: 1.25rem;
   border-radius: 20px;
-  background: var(--surface);
-  border: 1px solid var(--border);
+  background: color-mix(in srgb, var(--surface) 80%, transparent);
+  border: 1px solid color-mix(in srgb, var(--border) 60%, transparent);
+  box-shadow: 0 25px 55px rgba(15, 23, 42, 0.18);
+  backdrop-filter: blur(18px);
 }
 
 .hero-grid h4 {
@@ -164,8 +167,10 @@
 .metric-card {
   padding: 1.5rem;
   border-radius: 18px;
-  border: 1px solid var(--border);
-  background: var(--surface);
+  border: 1px solid color-mix(in srgb, var(--border) 55%, transparent);
+  background: color-mix(in srgb, var(--surface) 80%, transparent);
+  box-shadow: 0 30px 65px rgba(15, 23, 42, 0.18);
+  backdrop-filter: blur(16px);
 }
 
 .metric-card h3 {
@@ -181,9 +186,10 @@
 .services-grid .service-card {
   padding: 2.25rem;
   border-radius: 28px;
-  border: 1px solid var(--border);
-  background: var(--surface);
-  box-shadow: 0 30px 60px rgba(15, 23, 42, 0.08);
+  border: 1px solid color-mix(in srgb, var(--border) 60%, transparent);
+  background: color-mix(in srgb, var(--surface) 82%, transparent);
+  box-shadow: 0 45px 90px rgba(15, 23, 42, 0.25);
+  backdrop-filter: blur(28px);
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
@@ -199,11 +205,12 @@
   width: 48px;
   height: 48px;
   border-radius: 14px;
-  background: var(--surface-muted);
+  background: color-mix(in srgb, var(--surface) 70%, transparent);
   display: inline-flex;
   align-items: center;
   justify-content: center;
   color: var(--primary);
+  border: 1px solid color-mix(in srgb, var(--border) 60%, transparent);
 }
 
 .service-subtitle {
@@ -245,9 +252,10 @@
   margin-top: 3rem;
   padding: 2rem;
   border-radius: 32px;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  box-shadow: var(--card-shadow);
+  background: color-mix(in srgb, var(--surface) 85%, transparent);
+  border: 1px solid color-mix(in srgb, var(--border) 60%, transparent);
+  box-shadow: 0 40px 90px rgba(15, 23, 42, 0.22);
+  backdrop-filter: blur(24px);
 }
 
 .map-wrapper {
@@ -300,15 +308,17 @@
 }
 
 .os-card {
-  border: 1px solid var(--border);
+  border: 1px solid color-mix(in srgb, var(--border) 55%, transparent);
   border-radius: 20px;
   padding: 1.5rem;
-  background: var(--surface);
+  background: color-mix(in srgb, var(--surface) 78%, transparent);
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
   align-items: center;
   justify-content: center;
+  backdrop-filter: blur(16px);
+  box-shadow: 0 25px 60px rgba(15, 23, 42, 0.18);
 }
 
 .os-card img {
@@ -339,14 +349,28 @@
 }
 
 .community-card {
-  border: 1px solid var(--border);
+  border: 1px solid color-mix(in srgb, var(--border) 60%, transparent);
   border-radius: 20px;
   padding: 1.5rem;
   display: flex;
   gap: 1rem;
   align-items: center;
-  background: var(--surface);
+  background: color-mix(in srgb, var(--surface) 80%, transparent);
+  backdrop-filter: blur(18px);
+  box-shadow: 0 30px 70px rgba(15, 23, 42, 0.2);
   transition: transform 0.2s ease, box-shadow 0.2s ease, border 0.2s ease;
+}
+
+.community-card:hover {
+  transform: translateY(-4px);
+  border-color: color-mix(in srgb, var(--border-strong) 60%, transparent);
+  box-shadow: 0 30px 80px rgba(15, 23, 42, 0.25);
+}
+
+.community-card p {
+  margin: 0.2rem 0 0;
+  color: var(--text-muted);
+  font-size: 0.95rem;
 }
 
 .community-card:hover {
