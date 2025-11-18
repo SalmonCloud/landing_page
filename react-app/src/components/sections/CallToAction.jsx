@@ -16,9 +16,6 @@ const CallToAction = () => (
           <a className="primary-btn" href="https://billing.salmoncloud.co.uk/register.php" target="_blank" rel="noreferrer">
             Create Account
           </a>
-          <a className="ghost-btn" href="mailto:contact@salmoncloud.co.uk">
-            Book architecture session
-          </a>
         </div>
       </div>
     </div>

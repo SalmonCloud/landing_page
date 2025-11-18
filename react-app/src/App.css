@@ -495,58 +495,6 @@
   object-fit: contain;
 }
 
-.status-legal {
-  padding: 2rem 0 2rem;
-  background: var(--surface);
-  border-top: 1px solid var(--border);
-}
-
-.status-legal-inner {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
-.status-chip {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.75rem;
-  padding: 0.45rem 0.95rem;
-  border-radius: 999px;
-  border: 1px solid transparent;
-  background: color-mix(in srgb, var(--surface) 85%, transparent);
-  backdrop-filter: blur(12px);
-  transition: background 0.2s ease;
-}
-
-.status-chip:hover {
-  border-color: var(--border-strong);
-  background: var(--surface-muted);
-}
-
-.status-label {
-  font-weight: 600;
-  font-size: 0.9rem;
-}
-
-.status-divider {
-  color: var(--border-strong);
-  font-weight: 500;
-}
-
-.status-link {
-  font-weight: 600;
-  color: var(--text);
-  padding: 0.4rem 0.8rem;
-  border-radius: 999px;
-  transition: background 0.2s ease;
-}
-
-.status-link:hover {
-  background: var(--surface-muted);
-}
 
 .policy-wrapper {
   border-radius: 28px;
@@ -667,6 +615,25 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 0.35rem;
+}
+
+.footer-status {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.35rem;
+  margin: 0.35rem 0;
+}
+
+.footer-status span {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.footer-status statuspage-widget {
+  display: inline-flex;
+  align-self: flex-start;
+  margin: 0;
 }
 
 .footer-bottom {
