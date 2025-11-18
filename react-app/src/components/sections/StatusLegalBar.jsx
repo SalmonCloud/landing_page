@@ -4,11 +4,11 @@ const StatusLegalBar = () => (
   <section className="status-legal">
     <div className="container status-legal-inner">
       <div className="status-chip">
-        <span className="status-label">Live status</span>
+        {/* <span className="status-label">Live status</span> */}
         <statuspage-widget
           src="https://status.salmoncloud.co.uk"
           appearance="badge"
-          title="SalmonCloud system status"
+          title="System Status"
         ></statuspage-widget>
       </div>
       <span className="status-divider" aria-hidden="true">

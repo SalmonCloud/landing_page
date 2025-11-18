@@ -496,7 +496,7 @@
 }
 
 .status-legal {
-  padding: 2.5rem 0 3rem;
+  padding: 2rem 0 2rem;
   background: var(--surface);
   border-top: 1px solid var(--border);
 }
@@ -646,7 +646,7 @@
 }
 
 footer {
-  padding: 3rem 0 2rem;
+  padding: 2rem 0 2rem;
   color: var(--text-muted);
   border-top: 1px solid rgba(15, 23, 42, 0.07);
 }
