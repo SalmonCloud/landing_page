@@ -4,8 +4,8 @@ const CommunitySection = () => (
   <section className="section community-section">
     <div className="container">
       <p className="eyebrow">Join the community</p>
-      <h2 className="section-title">Connect with SalmonCloud engineers worldwide.</h2>
-      <p className="section-subtitle">Choose your preferred language and chat with our team and other builders in real time.</p>
+      <h2 className="section-title">Connect with SalmonClouders worldwide.</h2>
+      <p className="section-subtitle">Choose your preferred language and chat with our team and other users in real time.</p>
       <div className="community-grid">
         {communityLinks.map((item) => (
           <a key={item.label} className="community-card" href={item.href} target="_blank" rel="noreferrer">
