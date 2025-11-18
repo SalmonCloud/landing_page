@@ -27,23 +27,38 @@ export const dropdownRegions = [
 export const serviceCards = [
   {
     title: 'VPS Cloud',
-    summary: 'VPS',
-    tagline: 'Instantly scalable virtual servers.',
-    features: ['AMD EPYC Milan compute', 'PCIe 4.0 NVMe storage', '20 TB premium bandwidth', 'API & panel rebuilds'],
-    navHint: 'Select a VPS region from the top navigation to see plans.'
+    tagline: 'Elastic compute that launches in seconds.',
+    description:
+      'AMD EPYC Milan cores, mirrored PCIe 4.0 NVMe, and 20 TB of premium transit keep APIs, games, and SaaS workloads smooth without babysitting hardware.',
+    highlights: [
+      { label: 'Deploy time', value: '~45 sec' },
+      { label: 'Controls', value: 'Panel + API' },
+      { label: 'Transfer', value: '20 TB included' }
+    ],
+    note: 'Select a VPS region from the top navigation to compare plans.'
   },
   {
     title: 'Bare Metal',
-    summary: 'Bare Metal',
-    tagline: 'Dedicated hardware with full control.',
-    features: ['Latest AMD & Intel platforms', 'Out-of-band + root access', '1/10/25G network uplinks', 'Managed SLA available'],
-    navHint: 'Choose Bare Metal region using the navigation dropdown to continue.'
+    tagline: 'Dedicated hardware without the lead time.',
+    description:
+      'Latest-gen AMD and Intel platforms with IPMI, remote media, and configurable uplinks for databases, inference, and private clouds.',
+    highlights: [
+      { label: 'Uplinks', value: '1 / 10 / 25G' },
+      { label: 'Access', value: 'Full OOB' },
+      { label: 'Support', value: 'Managed SLA' }
+    ],
+    note: 'Use the Bare Metal dropdown in the navbar to view instant configurations.'
   },
   {
     title: 'Colocation',
-    summary: 'Colocation',
-    tagline: 'Bring-your-own hardware, we handle the rest.',
-    features: ['Redundant power & security', 'Carrier-neutral routing blend', 'Smart hands included', 'Direct cloud interconnects'],
+    tagline: 'Bring your own gear, we handle the facility.',
+    description:
+      'Ship single servers or full racks into redundant power, rich carrier blend, and 24/7 smart hands with direct cloud on-ramps.',
+    highlights: [
+      { label: 'Power', value: 'A/B 2N' },
+      { label: 'Carriers', value: '8+ Tier-1' },
+      { label: 'Smart hands', value: 'Included' }
+    ],
     cta: { label: 'Talk to sales', href: 'mailto:contact@salmoncloud.co.uk' }
   }
 ];

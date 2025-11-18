@@ -46,24 +46,24 @@ const Services = () => (
       <div className="grid services-grid grid-3" style={{ marginTop: '2.5rem' }}>
         {serviceCards.map((card) => (
           <article key={card.title} className="service-card">
-            <div className="service-body">
-              <div className="service-header">
-                <span className="service-icon">{serviceIcons[card.title]}</span>
-                <div>
-                  <h3>{card.summary}</h3>
-                  <p className="service-subtitle">{card.tagline}</p>
-                </div>
+            <div className="service-header">
+              <span className="service-icon">{serviceIcons[card.title]}</span>
+              <div>
+                <p className="service-label">{card.title}</p>
+                <h3>{card.tagline}</h3>
               </div>
-              <span className="service-label">What's included</span>
-              <ul>
-                {card.features.map((feature) => (
-                  <li key={feature}>{feature}</li>
-                ))}
-              </ul>
             </div>
-            {card.navHint ? (
-              <p className="service-hint">{card.navHint}</p>
-            ) : (
+            <p className="service-description">{card.description}</p>
+            <div className="service-highlights">
+              {card.highlights.map((item) => (
+                <div key={`${card.title}-${item.label}`} className="service-stat">
+                  <span>{item.label}</span>
+                  <strong>{item.value}</strong>
+                </div>
+              ))}
+            </div>
+            {card.note && <p className="service-note">{card.note}</p>}
+            {card.cta && (
               <a className="primary-btn service-cta" href={card.cta.href} target="_blank" rel="noreferrer">
                 {card.cta.label}
               </a>

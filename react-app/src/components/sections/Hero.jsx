@@ -5,10 +5,9 @@ const Hero = () => (
     <div className="container hero">
       <div>
         <p className="eyebrow">Customer-centric cloud</p>
-        <h1 className="section-title">Calm, precise infrastructure built for performance.</h1>
+        <h1 className="section-title">High-Trust Cloud Instances with low latency.</h1>
         <p className="section-subtitle">
-          SalmonCloud pairs enterprise hardware with artisan support so your workloads stay responsive, compliant, and
-          ready for scale.
+          Our infrastructure is built for real-world usage, delivering predictable behavior, optimized performance, and dependable uptime across regions.
         </p>
         <div className="hero-actions" style={{ display: 'flex', gap: '1rem', marginTop: '1.75rem', flexWrap: 'wrap' }}>
           <a className="primary-btn" href="https://billing.salmoncloud.co.uk/" target="_blank" rel="noreferrer">

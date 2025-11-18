@@ -24,7 +24,10 @@ const Navigation = () => {
       <div className="container nav-inner">
         <Link to="/" className="brand">
           <img src="/Logos/SalmonCloud/salmoncloud_icon_175x175.png" alt="SalmonCloud logo" />
-          <span>SalmonCloud</span>
+          <span className="brand-text">
+            <span className="salmon-color">Salmon</span>
+            <span className="cloud-color">Cloud</span>
+          </span>
         </Link>
 
         <nav className="nav-links" ref={navRef}>
