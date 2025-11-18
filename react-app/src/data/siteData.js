@@ -29,11 +29,10 @@ export const serviceCards = [
     title: 'VPS Cloud',
     tagline: 'Elastic compute that launches in seconds.',
     description:
-      'AMD EPYC Milan cores, mirrored PCIe 4.0 NVMe, and 20 TB of premium transit keep APIs, games, and SaaS workloads smooth without babysitting hardware.',
+      'AMD EPYC Milan cores, mirrored PCIe 4.0 NVMe, and premium transit keep APIs, games, and SaaS workloads smooth without babysitting hardware.',
     highlights: [
       { label: 'Deploy time', value: '~45 sec' },
-      { label: 'Controls', value: 'Panel + API' },
-      { label: 'Transfer', value: '20 TB included' }
+      { label: 'Transfer', value: 'Up to 200TB' }
     ],
     note: 'Select a VPS region from the top navigation to compare plans.'
   },
@@ -43,9 +42,8 @@ export const serviceCards = [
     description:
       'Latest-gen AMD and Intel platforms with IPMI, remote media, and configurable uplinks for databases, inference, and private clouds.',
     highlights: [
-      { label: 'Uplinks', value: '1 / 10 / 25G' },
-      { label: 'Access', value: 'Full OOB' },
-      { label: 'Support', value: 'Managed SLA' }
+      { label: 'Uplinks', value: 'Start from 1G' },
+      { label: 'Access', value: 'Full OOB' }
     ],
     note: 'Use the Bare Metal dropdown in the navbar to view instant configurations.'
   },
@@ -55,9 +53,8 @@ export const serviceCards = [
     description:
       'Ship single servers or full racks into redundant power, rich carrier blend, and 24/7 smart hands with direct cloud on-ramps.',
     highlights: [
-      { label: 'Power', value: 'A/B 2N' },
-      { label: 'Carriers', value: '8+ Tier-1' },
-      { label: 'Smart hands', value: 'Included' }
+      { label: 'Power', value: 'Enough' },
+      { label: 'Smart hands', value: 'Respond promptly' }
     ],
     cta: { label: 'Talk to sales', href: 'mailto:contact@salmoncloud.co.uk' }
   }
