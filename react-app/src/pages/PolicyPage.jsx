@@ -1,24 +1,26 @@
 import privacyHtml from '../content/privacy.html?raw';
 import termsHtml from '../content/terms.html?raw';
 
-const stripScripts = (html) => html.replace(/<script[\s\S]*?>[\s\S]*?<\/script>/gi, '');
+const sanitizePolicyHtml = (html) =>
+  html
+    .replace(/<!DOCTYPE[\s\S]*?>/gi, '')
+    .replace(/<script[\s\S]*?>[\s\S]*?<\/script>/gi, '')
+    .replace(/<style[\s\S]*?>[\s\S]*?<\/style>/gi, '')
+    .replace(/<link[\s\S]*?>/gi, '')
+    .replace(/<\/?(html|head|body)[^>]*>/gi, '');
 
-const PolicyPage = ({ title, html }) => (
+const PolicyPage = ({ html }) => (
   <section className="section">
     <div className="container policy-wrapper">
-      <p className="eyebrow">{title}</p>
-      <h1 className="section-title" style={{ fontSize: '2.25rem' }}>
-        {title}
-      </h1>
       <div
         className="policy-content"
         dangerouslySetInnerHTML={{
-          __html: stripScripts(html)
+          __html: sanitizePolicyHtml(html)
         }}
       />
     </div>
   </section>
 );
 
-export const PrivacyPage = () => <PolicyPage title="Privacy Policy" html={privacyHtml} />;
-export const TermsPage = () => <PolicyPage title="Terms of Service" html={termsHtml} />;
+export const PrivacyPage = () => <PolicyPage html={privacyHtml} />;
+export const TermsPage = () => <PolicyPage html={termsHtml} />;

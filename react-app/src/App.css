@@ -500,6 +500,12 @@
   box-shadow: var(--card-shadow);
 }
 
+.policy-content .container {
+  width: min(1000px, 100%);
+  margin: 0 auto;
+  padding: 0;
+}
+
 .policy-wrapper h1 {
   margin-top: 0;
 }
@@ -507,6 +513,105 @@
 .policy-wrapper :is(p, li) {
   color: var(--text-muted);
   line-height: 1.8;
+}
+
+.policy-content .title {
+  text-align: center;
+  font-family: 'Madimi One', 'Space Grotesk', system-ui, sans-serif;
+  margin-bottom: 2rem;
+}
+
+.policy-content .title img {
+  display: block;
+  margin: 0 auto 1.25rem;
+}
+
+.policy-content .display-1 {
+  font-size: clamp(2.5rem, 6vw, 3.75rem);
+  margin: 0;
+  line-height: 1.15;
+  font-weight: 700;
+}
+
+.policy-content .salmon-color {
+  -webkit-background-clip: text;
+  background-image: linear-gradient(90deg, #f59033, #fbf3ba, #f59033);
+  background-size: 150px;
+  color: transparent;
+  animation: policy-bling 1s linear infinite;
+}
+
+.policy-content .cloud-color {
+  -webkit-background-clip: text;
+  background-image: linear-gradient(90deg, #ffffff, #cbd5f5, #ffffff);
+  background-size: 150px;
+  color: transparent;
+  animation: policy-bling 1s linear infinite;
+}
+
+@keyframes policy-bling {
+  from {
+    background-position: 0;
+  }
+  to {
+    background-position: 150px;
+  }
+}
+
+.policy-content .custom-page {
+  font-family: 'Roboto', 'Inter', system-ui, sans-serif;
+  color: var(--text);
+  line-height: 1.75;
+}
+
+.policy-content .custom-page p,
+.policy-content .custom-page ul,
+.policy-content .custom-page ol {
+  font-size: 1.15rem;
+}
+
+.policy-content .custom-page p {
+  margin: 0 0 1.5rem;
+}
+
+.policy-content .custom-page ul,
+.policy-content .custom-page ol {
+  margin: 0 0 1.5rem 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.policy-content .custom-page li {
+  margin-bottom: 0.8rem;
+}
+
+.policy-content .custom-page li:last-child {
+  margin-bottom: 0;
+}
+
+.policy-content .custom-page > div {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.policy-content .custom-page h1 {
+  padding-top: 30px;
+  margin-bottom: 1.2rem;
+  font-size: clamp(1.5rem, 4vw, 2.4rem);
+}
+
+.policy-content .custom-ol {
+  font-size: 1.1rem;
+  margin: 0 0 1.5rem 1.5rem;
+  padding-left: 1.5rem;
+}
+
+.policy-content .custom-ol > li {
+  margin: 0 0 1.5rem;
+}
+
+.policy-content .custom-part {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 footer {

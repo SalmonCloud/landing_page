@@ -340,12 +340,31 @@ body {
 .custom-page {
     font-family: sans-serif;
     color: black;
+    line-height: 1.7;
 }
 
 .custom-page ul,
-.custom-page p {
+.custom-page p,
+.custom-page ol {
     font-size: 1.3rem;
-    margin: 0px;
+}
+
+.custom-page p {
+    margin: 0 0 1.5rem;
+}
+
+.custom-page ul,
+.custom-page ol {
+    margin: 0 0 1.5rem 1.5rem;
+    padding-left: 1.5rem;
+}
+
+.custom-page li {
+    margin-bottom: 0.8rem;
+}
+
+.custom-page li:last-child {
+    margin-bottom: 0;
 }
 
 .custom-page > div {
@@ -355,24 +374,21 @@ body {
 
 .custom-page > div > ol {
     font-size: 1.3rem;
-    margin-left: 40px;
-}
-
-.custom-page ul {
-    margin: 20px;
 }
 
 .custom-page h1 {
     padding-top: 30px;
+    margin-bottom: 1.2rem;
 }
 
 .custom-ol {
     font-size: 1.2rem;
-    margin: 0px;
+    margin: 0 0 1.5rem 1.5rem;
+    padding-left: 1.5rem;
 }
 
 .custom-ol > li {
-    margin: 2rem;
+    margin: 0 0 1.5rem;
 }
 
 .custom-part {
