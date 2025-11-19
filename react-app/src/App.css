@@ -621,19 +621,43 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 0.35rem;
-  margin: 0.35rem 0;
+  gap: 0.2rem;
+  margin: 0;
 }
 
-.footer-status span {
+.footer-status.footer-status-inline {
+  flex-direction: row;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.footer-status-label {
   font-weight: 600;
   font-size: 0.9rem;
+  color: var(--text);
 }
 
-.footer-status statuspage-widget {
+.footer-status-pill {
   display: inline-flex;
-  align-self: flex-start;
-  margin: 0;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--surface) 92%, transparent);
+}
+
+.footer-status-dot {
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 50%;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+}
+
+.footer-status-text {
+  font-weight: 500;
+  font-style: italic;
+  font-size: 0.85rem;
+  color: var(--text-muted);
 }
 
 .footer-bottom {

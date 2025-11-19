@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import StatusIndicator from '../common/StatusIndicator';
 
 const Footer = () => (
   <footer>
@@ -9,9 +10,9 @@ const Footer = () => (
             <img src="/Logos/SalmonCloud/salmoncloud_icon_175x175.png" alt="SalmonCloud logo" width={40} height={40} />
             <div>
               <strong>SalmonCloud Ltd.</strong>
-              <div>Company No. 15218615</div>
             </div>
           </div>
+          <StatusIndicator label={null} />
           <p>Customer-centric cloud infrastructure delivered from London to the world.</p>
         </div>
         <div>
@@ -30,14 +31,6 @@ const Footer = () => (
         </div>
         <div>
           <strong>Resources</strong>
-          <div className="footer-status">
-            {/* <span>Live Status</span> */}
-            <statuspage-widget
-              src="https://status.salmoncloud.co.uk"
-              appearance="badge"
-              title=""
-            ></statuspage-widget>
-          </div>
           <div className="footer-links">
             <Link to="/privacy">Privacy Policy</Link>
             <Link to="/terms">Terms of Service</Link>
