@@ -2,12 +2,27 @@ import { useEffect, useRef, useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { dropdownRegions } from '../../data/siteData';
 import { useTheme } from '../../context/ThemeContext';
+import useScrollDirection from '../../hooks/useScrollDirection';
 
 const Navigation = () => {
   const location = useLocation();
   const { theme, toggleTheme } = useTheme();
   const [openMenu, setOpenMenu] = useState(null);
   const navRef = useRef(null);
+  const [isMobile, setIsMobile] = useState(false);
+  const hideNav = useScrollDirection({ threshold: 12, enabled: isMobile });
+
+  useEffect(() => {
+    const media = window.matchMedia('(max-width: 900px)');
+    const handleChange = () => setIsMobile(media.matches);
+    handleChange();
+    if (media.addEventListener) {
+      media.addEventListener('change', handleChange);
+      return () => media.removeEventListener('change', handleChange);
+    }
+    media.addListener(handleChange);
+    return () => media.removeListener(handleChange);
+  }, []);
 
   useEffect(() => {
     const handleClick = (event) => {
@@ -20,7 +35,7 @@ const Navigation = () => {
   }, []);
 
   return (
-    <header className="nav-bar">
+    <header className={`nav-bar ${hideNav ? 'nav-bar--hidden' : ''}`}>
       <div className="container nav-inner">
         <Link to="/" className="brand">
           <img src="/Logos/SalmonCloud/salmoncloud_icon_175x175.png" alt="SalmonCloud logo" />
