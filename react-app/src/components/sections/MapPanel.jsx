@@ -9,7 +9,10 @@ const MapPanel = () => (
           {mapPins.map((pin) => (
             <div key={pin.id} className="map-pin" style={{ top: pin.top, left: pin.left }}>
               <span className="map-pin-label">{pin.label}</span>
-              <span className="map-pin-dot" aria-hidden="true" />
+              <span className="map-pin-dot" aria-hidden="true">
+                <span className="map-pin-pulse" />
+                <span className="map-pin-pulse delay" />
+              </span>
             </div>
           ))}
         </div>
