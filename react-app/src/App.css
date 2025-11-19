@@ -367,7 +367,7 @@
 
 .map-pin {
   position: absolute;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -100%);
   pointer-events: none;
   display: flex;
   flex-direction: column;
@@ -376,17 +376,7 @@
   z-index: 1;
 }
 
-.map-pin::after {
-  content: '';
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background: var(--primary);
-  border: 2px solid #fff;
-  box-shadow: 0 0 0 4px rgba(255, 107, 53, 0.2);
-}
-
-.map-pin span {
+.map-pin-label {
   background: #0f172a;
   color: #fff;
   padding: 0.35rem 0.7rem;
@@ -395,6 +385,16 @@
   white-space: nowrap;
   box-shadow: 0 5px 25px rgba(15, 23, 42, 0.3);
   z-index: 2;
+}
+
+.map-pin-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--primary);
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 4px rgba(255, 107, 53, 0.2);
+  transform: translateY(50%);
 }
 
 .os-grid {

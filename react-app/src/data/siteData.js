@@ -68,8 +68,8 @@ export const metrics = [
 ];
 
 export const mapPins = [
-  { id: 'sanjose', label: 'San Jose', top: '26.5%', left: '17%' },
-  { id: 'hongkong', label: 'Hong Kong', top: '38%', left: '81%' }
+  { id: 'sanjose', label: 'San Jose', top: '31%', left: '17%' },
+  { id: 'hongkong', label: 'Hong Kong', top: '41.8%', left: '81%' }
 ];
 
 export const osOptions = [
