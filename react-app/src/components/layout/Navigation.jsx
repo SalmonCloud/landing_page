@@ -102,8 +102,9 @@ const Navigation = () => {
               event.stopPropagation();
               toggleTheme();
             }}
+            aria-label={theme === 'light' ? 'Switch to dark mode' : 'Switch to light mode'}
           >
-            {theme === 'light' ? '☾ Dark Mode' : '☀ Light Mode'}
+            {theme === 'light' ? '☾' : '☀'}
           </button>
           {location.pathname !== '/' && (
             <Link to="/" className="ghost-btn">
