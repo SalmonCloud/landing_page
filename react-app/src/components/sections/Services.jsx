@@ -1,3 +1,4 @@
+import { useLocation, useNavigate } from 'react-router-dom';
 import { serviceCards } from '../../data/siteData';
 
 const serviceIcons = {
@@ -34,45 +35,75 @@ const serviceIcons = {
   )
 };
 
-const Services = () => (
-  <section className="section" id="solutions">
-    <div className="container">
-      <p className="eyebrow">Solutions</p>
-      <h2 className="section-title">Choose the right landing zone for every workload.</h2>
-      <p className="section-subtitle">
-        From low-latency trading engines to AI inference pipelines, each platform is tuned for predictable throughput
-        and minimal noise.
-      </p>
-      <div className="grid services-grid grid-3" style={{ marginTop: '2.5rem' }}>
-        {serviceCards.map((card) => (
-          <article key={card.title} className="service-card">
-            <div className="service-header">
-              <span className="service-icon">{serviceIcons[card.title]}</span>
-              <div>
-                <p className="service-label">{card.title}</p>
-                <h3>{card.tagline}</h3>
-              </div>
-            </div>
-            <p className="service-description">{card.description}</p>
-            <div className="service-highlights">
-              {card.highlights.map((item) => (
-                <div key={`${card.title}-${item.label}`} className="service-stat">
-                  <span>{item.label}</span>
-                  <strong>{item.value}</strong>
+const Services = () => {
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const handleContactScroll = (event) => {
+    event.preventDefault();
+    if (location.pathname !== '/') {
+      navigate('/#contact');
+      return;
+    }
+    const target = document.getElementById('contact');
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
+
+  return (
+    <section className="section" id="solutions">
+      <div className="container">
+        <p className="eyebrow">Solutions</p>
+        <h2 className="section-title">Choose the right landing zone for every workload.</h2>
+        <p className="section-subtitle">
+          From low-latency trading engines to AI inference pipelines, each platform is tuned for predictable throughput
+          and minimal noise.
+        </p>
+        <div className="grid services-grid grid-3" style={{ marginTop: '2.5rem' }}>
+          {serviceCards.map((card) => {
+            const isContactCta = card.cta && card.cta.href === '/#contact';
+            return (
+              <article key={card.title} className="service-card">
+                <div className="service-header">
+                  <span className="service-icon">{serviceIcons[card.title]}</span>
+                  <div>
+                    <p className="service-label">{card.title}</p>
+                    <h3>{card.tagline}</h3>
+                  </div>
                 </div>
-              ))}
-            </div>
-            {card.note && <p className="service-note">{card.note}</p>}
-            {card.cta && (
-              <a className="primary-btn service-cta" href={card.cta.href} target="_blank" rel="noreferrer">
-                {card.cta.label}
-              </a>
-            )}
-          </article>
-        ))}
+                <p className="service-description">{card.description}</p>
+                <div className="service-highlights">
+                  {card.highlights.map((item) => (
+                    <div key={`${card.title}-${item.label}`} className="service-stat">
+                      <span>{item.label}</span>
+                      <strong>{item.value}</strong>
+                    </div>
+                  ))}
+                </div>
+                {card.note && <p className="service-note">{card.note}</p>}
+                {card.cta &&
+                  (isContactCta ? (
+                    <button type="button" className="primary-btn service-cta" onClick={handleContactScroll}>
+                      {card.cta.label}
+                    </button>
+                  ) : (
+                    <a
+                      className="primary-btn service-cta"
+                      href={card.cta.href}
+                      target={card.cta.target ?? '_blank'}
+                      rel={card.cta.target === '_blank' || !card.cta.target ? 'noreferrer' : undefined}
+                    >
+                      {card.cta.label}
+                    </a>
+                  ))}
+              </article>
+            );
+          })}
+        </div>
       </div>
-    </div>
-  </section>
-);
+    </section>
+  );
+};
 
 export default Services;

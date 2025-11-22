@@ -496,24 +496,23 @@
 
 .community-card {
   position: relative;
-  border: 1px solid color-mix(in srgb, var(--border) 60%, transparent);
-  border-radius: 20px;
-  padding: 1.5rem;
+  border: 2px solid color-mix(in srgb, var(--border-strong) 45%, transparent);
+  border-radius: 18px;
+  padding: 1.25rem 1.5rem;
+  box-sizing: border-box;
   display: flex;
   gap: 1rem;
   align-items: center;
-  background: color-mix(in srgb, var(--surface) 88%, transparent);
-  backdrop-filter: blur(22px);
-  box-shadow: 0 40px 90px rgba(15, 23, 42, 0.25);
-  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.35s ease, border 0.35s ease, background 0.35s ease;
+  background: color-mix(in srgb, var(--surface) 90%, transparent);
+  box-shadow: 0 28px 70px rgba(15, 23, 42, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border 0.2s ease;
   overflow: hidden;
 }
 
 .community-card:hover {
-  transform: translate3d(0, -3px, 0) scale(1.005);
-  border-color: color-mix(in srgb, var(--border-strong) 75%, transparent);
-  box-shadow: 0 60px 120px rgba(5, 8, 28, 0.55);
-  background: color-mix(in srgb, var(--surface) 62%, transparent);
+  transform: none;
+  border-color: var(--primary);
+  box-shadow: 0 40px 90px rgba(5, 8, 28, 0.5);
 }
 
 .community-card > * {
@@ -525,6 +524,53 @@
   margin: 0.2rem 0 0;
   color: var(--text-muted);
   font-size: 0.95rem;
+}
+
+.community-direct {
+  margin-top: 2.5rem;
+}
+
+.contact-buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 1.2rem;
+}
+
+.contact-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.95rem 1.1rem;
+  border-radius: 14px;
+  border: 2px solid color-mix(in srgb, var(--border-strong) 40%, transparent);
+  background: color-mix(in srgb, var(--surface) 95%, transparent);
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.16);
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border 0.18s ease;
+  color: inherit;
+  box-sizing: border-box;
+}
+
+.contact-button:hover {
+  transform: none;
+  border-color: var(--primary);
+  box-shadow: 0 24px 55px rgba(15, 23, 42, 0.22);
+}
+
+.contact-button img,
+.contact-button .contact-button-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 10px;
+  object-fit: contain;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: color-mix(in srgb, var(--surface-muted) 85%, transparent);
+}
+
+.contact-button .contact-button-icon {
+  font-size: 1.15rem;
 }
 
 .community-icon {

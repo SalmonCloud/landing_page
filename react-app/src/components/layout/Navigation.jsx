@@ -14,10 +14,10 @@ const Navigation = () => {
   const hideNav = useScrollDirection({ threshold: 12, enabled: isMobile });
   const handleContactClick = () => {
     if (location.pathname !== '/') {
-      navigate('/#community');
+      navigate('/#contact');
       return;
     }
-    const target = document.getElementById('community');
+    const target = document.getElementById('contact');
     if (target) {
       target.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }

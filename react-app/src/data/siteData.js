@@ -56,7 +56,7 @@ export const serviceCards = [
       { label: 'Power', value: 'Enough' },
       { label: 'Smart hands', value: 'Respond promptly' }
     ],
-    cta: { label: 'Talk to sales', href: 'mailto:contact@salmoncloud.co.uk' }
+    cta: { label: 'Contact sales', href: '/#contact', target: '_self' }
   }
 ];
 
