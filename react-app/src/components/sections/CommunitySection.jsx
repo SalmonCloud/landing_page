@@ -1,7 +1,7 @@
 import { communityLinks } from '../../data/siteData';
 
 const CommunitySection = () => (
-  <section className="section community-section">
+  <section className="section community-section" id="community">
     <div className="container">
       <p className="eyebrow">Join the community</p>
       <h2 className="section-title">Connect with SalmonClouders worldwide.</h2>

@@ -1,16 +1,27 @@
 import { useEffect, useRef, useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { dropdownRegions } from '../../data/siteData';
 import { useTheme } from '../../context/ThemeContext';
 import useScrollDirection from '../../hooks/useScrollDirection';
 
 const Navigation = () => {
   const location = useLocation();
+  const navigate = useNavigate();
   const { theme, toggleTheme } = useTheme();
   const [openMenu, setOpenMenu] = useState(null);
   const navRef = useRef(null);
   const [isMobile, setIsMobile] = useState(false);
   const hideNav = useScrollDirection({ threshold: 12, enabled: isMobile });
+  const handleContactClick = () => {
+    if (location.pathname !== '/') {
+      navigate('/#community');
+      return;
+    }
+    const target = document.getElementById('community');
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
 
   useEffect(() => {
     const media = window.matchMedia('(max-width: 900px)');
@@ -46,7 +57,9 @@ const Navigation = () => {
         </Link>
 
         <nav className="nav-links" ref={navRef}>
-          {dropdownRegions.map((menu) => {
+          {dropdownRegions
+            .filter((menu) => menu.label !== 'IP Transit')
+            .map((menu) => {
             const isOpen = openMenu === menu.label;
             return (
               <div key={menu.label} className={`nav-dropdown ${isOpen ? 'open' : ''}`}>
@@ -89,8 +102,14 @@ const Navigation = () => {
               </div>
             );
           })}
-          <button type="button" className="nav-pill">
-            IP Leases
+          <a className="nav-pill" href="https://billing.salmoncloud.co.uk/store/ip-transit" target="_blank" rel="noreferrer">
+            IP Transit
+          </a>
+          <a className="nav-pill" href="https://billing.salmoncloud.co.uk/store/ipv4-leases" target="_blank" rel="noreferrer">
+            IP Lease
+          </a>
+          <button type="button" className="nav-pill" onClick={handleContactClick}>
+            Contact Us
           </button>
         </nav>
 
