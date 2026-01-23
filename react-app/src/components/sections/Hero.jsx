@@ -5,7 +5,7 @@ const Hero = () => (
     <div className="container hero">
       <div>
         <p className="eyebrow">Customer-centric cloud</p>
-        <h1 className="section-title">High-Trust Cloud Instances with low latency.</h1>
+        <h1 className="section-title">Trustworthy Cloud Instances with low latency.</h1>
         <p className="section-subtitle">
           Our infrastructure is built for real-world usage, delivering predictable behavior, optimized performance, and dependable uptime across regions.
         </p>

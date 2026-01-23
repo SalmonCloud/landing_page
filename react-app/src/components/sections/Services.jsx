@@ -57,7 +57,7 @@ const Services = () => {
         <p className="eyebrow">Solutions</p>
         <h2 className="section-title">Choose the right landing zone for every workload.</h2>
         <p className="section-subtitle">
-          From low-latency trading engines to AI inference pipelines, each platform is tuned for predictable throughput
+          From low-latency trading engines to high-traffic live streaming and content delivery, each platform is tuned for predictable throughput
           and minimal noise.
         </p>
         <div className="grid services-grid grid-3" style={{ marginTop: '2.5rem' }}>

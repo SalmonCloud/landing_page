@@ -42,7 +42,7 @@ export const serviceCards = [
     description:
       'Latest-gen AMD and Intel platforms with IPMI, remote media, and configurable uplinks for databases, inference, and private clouds.',
     highlights: [
-      { label: 'Uplinks', value: 'Start from 1G' },
+      { label: 'Uplinks', value: 'Up to 25Gbps' },
       { label: 'Access', value: 'Full OOB' }
     ],
     note: 'Use the Bare Metal dropdown in the navbar to view instant configurations.'
@@ -53,7 +53,7 @@ export const serviceCards = [
     description:
       'Ship single servers or full racks into redundant power, rich carrier blend, and 24/7 smart hands with direct cloud on-ramps.',
     highlights: [
-      { label: 'Power', value: 'Enough' },
+      { label: 'Datacenter', value: 'Tier3+' },
       { label: 'Smart hands', value: 'Respond promptly' }
     ],
     cta: { label: 'Contact sales', href: '/#contact', target: '_self' }
@@ -61,10 +61,10 @@ export const serviceCards = [
 ];
 
 export const metrics = [
-  { label: 'Average deploy time', value: '45 sec', subtitle: 'From order to ready-to-SSH' },
-  { label: 'Carrier blend', value: '8+ Tier-1', subtitle: 'Balanced low-latency paths' },
-  { label: 'Global throughput', value: '3.2 Tbps', subtitle: 'Committed multi-site capacity' },
-  { label: 'SLA uptime', value: '99.99%', subtitle: 'Backed by contract credits' }
+  { label: 'Average deploy time', value: '45 sec', subtitle: 'From order to SSH-ready' },
+  { label: 'Carrier blend', value: '5+ Tier-1&2', subtitle: 'Balanced low-latency paths' },
+  { label: 'Global throughput', value: '100 Gbps+', subtitle: 'Committed multi-site capacity' },
+  { label: 'Server load', value: 'Under 70%', subtitle: 'Ensuring consistent high performance' }
 ];
 
 export const mapPins = [
