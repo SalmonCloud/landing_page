@@ -47,8 +47,8 @@ const Footer = () => (
       </div>
       <div className="footer-bottom">
         <span>© {new Date().getFullYear()} SalmonCloud Ltd. All Rights Reserved.</span>
-        <span>Registered in England &amp; Wales</span>
-        <span>128 City Road, London, EC1V 2NX</span>
+        <span>Registered in England &amp; Wales, Company Number 15025687</span>
+        <span>128 City Road, London, United Kingdom, EC1V 2NX</span>
       </div>
     </div>
   </footer>
