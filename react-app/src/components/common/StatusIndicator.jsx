@@ -57,17 +57,19 @@ const StatusIndicator = ({ label = 'Live Status' }) => {
   const statusText = isLoading ? 'Checking status…' : status.description || style.fallback;
 
   return (
-    <div className={`footer-status ${label ? '' : 'footer-status-inline'}`.trim()}>
-      {label && <span className="footer-status-label">{label}</span>}
-      <div className="footer-status-pill" aria-live="polite">
-        <span
-          className="footer-status-dot"
-          style={{ backgroundColor: indicatorColor }}
-          aria-hidden="true"
-        />
-        <span className="footer-status-text">{statusText}</span>
+    <a href="https://status.salmoncloud.co.uk" target="_blank" rel="noreferrer">
+      <div className={`footer-status ${label ? '' : 'footer-status-inline'}`.trim()}>
+        {label && <span className="footer-status-label">{label}</span>}
+        <div className="footer-status-pill" aria-live="polite">
+          <span
+            className="footer-status-dot"
+            style={{ backgroundColor: indicatorColor }}
+            aria-hidden="true"
+          />
+          <span className="footer-status-text">{statusText}</span>
+        </div>
       </div>
-    </div>
+    </a>
   );
 };
 
