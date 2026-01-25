@@ -64,7 +64,7 @@ export const metrics = [
   { label: 'Average deploy time', value: '45 sec', subtitle: 'From order to SSH-ready' },
   { label: 'Carrier blend', value: '5+ Tier-1&2', subtitle: 'Balanced low-latency paths' },
   { label: 'Global throughput', value: '100 Gbps+', subtitle: 'Committed multi-site capacity' },
-  { label: 'Server load', value: 'Under 70%', subtitle: 'Ensuring consistent high performance' }
+  { label: 'Server load', value: '< 70%', subtitle: 'Ensuring consistent high performance' }
 ];
 
 export const mapPins = [
