@@ -112,7 +112,7 @@ main {
 }
 
 .section-subtitle {
-  max-width: 640px;
+  max-width: 1280px;
   color: var(--text-muted);
 }
 

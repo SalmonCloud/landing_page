@@ -57,8 +57,8 @@ const Services = () => {
         <p className="eyebrow">Solutions</p>
         <h2 className="section-title">Choose the right landing zone for every workload.</h2>
         <p className="section-subtitle">
-          From low-latency trading engines to high-traffic live streaming and content delivery, each platform is tuned for predictable throughput
-          and minimal noise.
+          From VPS instances to bare metal servers, each platform has been tuned
+          to provide the best performance and the lowest downtime possible.
         </p>
         <div className="grid services-grid grid-3" style={{ marginTop: '2.5rem' }}>
           {serviceCards.map((card) => {
