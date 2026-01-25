@@ -18,7 +18,6 @@ const Footer = () => (
         <div>
           <strong>Contact</strong>
           <div className="footer-links">
-            <span>128 City Road, London, EC1V 2NX</span>
             <a href="mailto:contact@salmoncloud.co.uk">contact@salmoncloud.co.uk</a>
             <a href="tel:+442033766472">+44 020 3376 6472</a>
             <a href="https://discord.gg/4Vja6qKQ" target="_blank" rel="noreferrer">
@@ -49,6 +48,7 @@ const Footer = () => (
       <div className="footer-bottom">
         <span>© {new Date().getFullYear()} SalmonCloud Ltd. All Rights Reserved.</span>
         <span>Registered in England &amp; Wales</span>
+        <span>128 City Road, London, EC1V 2NX</span>
       </div>
     </div>
   </footer>
