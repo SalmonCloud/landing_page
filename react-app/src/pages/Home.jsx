@@ -1,0 +1,23 @@
+import Hero from '../components/sections/Hero';
+import Metrics from '../components/sections/Metrics';
+import Services from '../components/sections/Services';
+import MapPanel from '../components/sections/MapPanel';
+import OSLibrary from '../components/sections/OSLibrary';
+import CallToAction from '../components/sections/CallToAction';
+import CommunitySection from '../components/sections/CommunitySection';
+import ContactSection from '../components/sections/ContactSection';
+
+const Home = () => (
+  <>
+    <Hero />
+    <Metrics />
+    <Services />
+    <MapPanel />
+    <OSLibrary />
+    <CallToAction />
+    <CommunitySection />
+    <ContactSection />
+  </>
+);
+
+export default Home;
